@@ -36,20 +36,23 @@ namespace TugasBesar_KPL
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbLibId = new System.Windows.Forms.TextBox();
+            this.tbNama = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
+            this.tbNoHP = new System.Windows.Forms.TextBox();
+            this.tbPass = new System.Windows.Forms.TextBox();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(399, 178);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(402, 153);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 20);
+            this.label1.Size = new System.Drawing.Size(84, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "SIGN UP";
             // 
@@ -57,7 +60,7 @@ namespace TugasBesar_KPL
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(271, 218);
+            this.label2.Location = new System.Drawing.Point(222, 205);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 20);
             this.label2.TabIndex = 1;
@@ -67,7 +70,7 @@ namespace TugasBesar_KPL
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(271, 267);
+            this.label3.Location = new System.Drawing.Point(222, 254);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 20);
             this.label3.TabIndex = 2;
@@ -77,7 +80,7 @@ namespace TugasBesar_KPL
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(271, 323);
+            this.label4.Location = new System.Drawing.Point(222, 310);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 20);
             this.label4.TabIndex = 3;
@@ -87,7 +90,7 @@ namespace TugasBesar_KPL
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(271, 423);
+            this.label5.Location = new System.Drawing.Point(222, 410);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(70, 20);
             this.label5.TabIndex = 4;
@@ -97,58 +100,81 @@ namespace TugasBesar_KPL
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(271, 375);
+            this.label6.Location = new System.Drawing.Point(222, 362);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(110, 20);
             this.label6.TabIndex = 5;
             this.label6.Text = "No.Handphone";
             // 
-            // textBox1
+            // tbLibId
             // 
-            this.textBox1.Location = new System.Drawing.Point(412, 215);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(173, 27);
-            this.textBox1.TabIndex = 6;
+            this.tbLibId.Location = new System.Drawing.Point(363, 202);
+            this.tbLibId.Name = "tbLibId";
+            this.tbLibId.Size = new System.Drawing.Size(173, 27);
+            this.tbLibId.TabIndex = 1;
             // 
-            // textBox2
+            // tbNama
             // 
-            this.textBox2.Location = new System.Drawing.Point(412, 267);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(173, 27);
-            this.textBox2.TabIndex = 7;
+            this.tbNama.Location = new System.Drawing.Point(363, 254);
+            this.tbNama.Name = "tbNama";
+            this.tbNama.Size = new System.Drawing.Size(173, 27);
+            this.tbNama.TabIndex = 2;
             // 
-            // textBox3
+            // tbEmail
             // 
-            this.textBox3.Location = new System.Drawing.Point(412, 316);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(173, 27);
-            this.textBox3.TabIndex = 8;
+            this.tbEmail.Location = new System.Drawing.Point(363, 303);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(173, 27);
+            this.tbEmail.TabIndex = 3;
             // 
-            // textBox4
+            // tbNoHP
             // 
-            this.textBox4.Location = new System.Drawing.Point(412, 368);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(173, 27);
-            this.textBox4.TabIndex = 9;
+            this.tbNoHP.Location = new System.Drawing.Point(363, 355);
+            this.tbNoHP.Name = "tbNoHP";
+            this.tbNoHP.Size = new System.Drawing.Size(173, 27);
+            this.tbNoHP.TabIndex = 4;
             // 
-            // textBox5
+            // tbPass
             // 
-            this.textBox5.Location = new System.Drawing.Point(412, 416);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(173, 27);
-            this.textBox5.TabIndex = 10;
+            this.tbPass.Location = new System.Drawing.Point(363, 403);
+            this.tbPass.Name = "tbPass";
+            this.tbPass.Size = new System.Drawing.Size(173, 27);
+            this.tbPass.TabIndex = 5;
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.BackColor = System.Drawing.Color.Transparent;
+            this.btnSubmit.Location = new System.Drawing.Point(402, 452);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(77, 31);
+            this.btnSubmit.TabIndex = 6;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(166, 106);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(69, 34);
+            this.button1.TabIndex = 7;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // DaftarAkun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(896, 512);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(899, 521);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSubmit);
+            this.Controls.Add(this.tbPass);
+            this.Controls.Add(this.tbNoHP);
+            this.Controls.Add(this.tbEmail);
+            this.Controls.Add(this.tbNama);
+            this.Controls.Add(this.tbLibId);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -171,10 +197,12 @@ namespace TugasBesar_KPL
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbLibId;
+        private System.Windows.Forms.TextBox tbNama;
+        private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.TextBox tbNoHP;
+        private System.Windows.Forms.TextBox tbPass;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Button button1;
     }
 }

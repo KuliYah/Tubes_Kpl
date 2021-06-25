@@ -1,38 +1,38 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {}
+    ".NETCoreApp,Version=v3.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": []
+    ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\AKHBAR PUTRA\\.nuget\\packages\\": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\kuliah\\SMSTER 4\\Kontruksi\\TUBES\\Tubes_Kpl\\TugasBesar_KPL\\TugasBesar_KPL.csproj",
+      "projectUniqueName": "D:\\CATATAN KULIAH\\2. SEMESTER 4\\Konstruksi PL\\Kelas\\TUBES\\Tubes_Kpl\\TugasBesar_KPL\\TugasBesar_KPL.csproj",
       "projectName": "TugasBesar_KPL",
-      "projectPath": "C:\\kuliah\\SMSTER 4\\Kontruksi\\TUBES\\Tubes_Kpl\\TugasBesar_KPL\\TugasBesar_KPL.csproj",
-      "packagesPath": "C:\\Users\\AKHBAR PUTRA\\.nuget\\packages\\",
-      "outputPath": "C:\\kuliah\\SMSTER 4\\Kontruksi\\TUBES\\Tubes_Kpl\\TugasBesar_KPL\\obj\\",
+      "projectPath": "D:\\CATATAN KULIAH\\2. SEMESTER 4\\Konstruksi PL\\Kelas\\TUBES\\Tubes_Kpl\\TugasBesar_KPL\\TugasBesar_KPL.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "D:\\CATATAN KULIAH\\2. SEMESTER 4\\Konstruksi PL\\Kelas\\TUBES\\Tubes_Kpl\\TugasBesar_KPL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\AKHBAR PUTRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0-windows7.0"
+        "netcoreapp3.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0-windows7.0": {
-          "targetAlias": "net5.0-windows",
+        "netcoreapp3.0": {
+          "targetAlias": "netcoreapp3.0",
           "projectReferences": {}
         }
       },
@@ -43,8 +43,8 @@
       }
     },
     "frameworks": {
-      "net5.0-windows7.0": {
-        "targetAlias": "net5.0-windows",
+      "netcoreapp3.0": {
+        "targetAlias": "netcoreapp3.0",
         "imports": [
           "net461",
           "net462",
@@ -55,6 +55,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.1, 3.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.0.3, 3.0.3]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -63,7 +81,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
