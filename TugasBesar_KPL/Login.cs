@@ -10,11 +10,31 @@ using System.Windows.Forms;
 
 namespace TugasBesar_KPL
 {
-    public partial class Login : Form
+    public partial class lblLogin : Form
     {
-        public Login()
+        public lblLogin()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLibraryId_Click(object sender, EventArgs e)
+        {
+            const string message = "Apakah anda yakin ingin keluar dari aplikasi?";
+            const string caption = "";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+                this.Close();
+
         }
     }
 }

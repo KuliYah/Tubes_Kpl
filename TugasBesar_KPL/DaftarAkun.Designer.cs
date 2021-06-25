@@ -36,20 +36,20 @@ namespace TugasBesar_KPL
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(399, 178);
+            this.label1.Location = new System.Drawing.Point(349, 134);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 20);
+            this.label1.Size = new System.Drawing.Size(51, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "SIGN UP";
             // 
@@ -57,9 +57,9 @@ namespace TugasBesar_KPL
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(271, 218);
+            this.label2.Location = new System.Drawing.Point(237, 164);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 20);
+            this.label2.Size = new System.Drawing.Size(56, 15);
             this.label2.TabIndex = 1;
             this.label2.Text = "Library Id";
             // 
@@ -67,9 +67,9 @@ namespace TugasBesar_KPL
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(271, 267);
+            this.label3.Location = new System.Drawing.Point(237, 200);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 20);
+            this.label3.Size = new System.Drawing.Size(39, 15);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nama";
             // 
@@ -77,9 +77,9 @@ namespace TugasBesar_KPL
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(271, 323);
+            this.label4.Location = new System.Drawing.Point(237, 242);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 20);
+            this.label4.Size = new System.Drawing.Size(36, 15);
             this.label4.TabIndex = 3;
             this.label4.Text = "Email";
             // 
@@ -87,9 +87,9 @@ namespace TugasBesar_KPL
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(271, 423);
+            this.label5.Location = new System.Drawing.Point(237, 317);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 20);
+            this.label5.Size = new System.Drawing.Size(57, 15);
             this.label5.TabIndex = 4;
             this.label5.Text = "Password";
             // 
@@ -97,53 +97,58 @@ namespace TugasBesar_KPL
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(271, 375);
+            this.label6.Location = new System.Drawing.Point(237, 281);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 20);
+            this.label6.Size = new System.Drawing.Size(89, 15);
             this.label6.TabIndex = 5;
             this.label6.Text = "No.Handphone";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(412, 215);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(173, 27);
-            this.textBox1.TabIndex = 6;
-            // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(412, 267);
+            this.textBox2.Location = new System.Drawing.Point(360, 200);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(173, 27);
+            this.textBox2.Size = new System.Drawing.Size(152, 23);
             this.textBox2.TabIndex = 7;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(412, 316);
+            this.textBox3.Location = new System.Drawing.Point(360, 237);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(173, 27);
+            this.textBox3.Size = new System.Drawing.Size(152, 23);
             this.textBox3.TabIndex = 8;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(412, 368);
+            this.textBox4.Location = new System.Drawing.Point(360, 276);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(173, 27);
+            this.textBox4.Size = new System.Drawing.Size(152, 23);
             this.textBox4.TabIndex = 9;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(412, 416);
+            this.textBox5.Location = new System.Drawing.Point(360, 312);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(173, 27);
+            this.textBox5.Size = new System.Drawing.Size(152, 23);
             this.textBox5.TabIndex = 10;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(360, 161);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(152, 23);
+            this.textBox1.TabIndex = 6;
             // 
             // DaftarAkun
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(896, 512);
+            this.ClientSize = new System.Drawing.Size(784, 384);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -155,6 +160,7 @@ namespace TugasBesar_KPL
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DaftarAkun";
             this.Text = "DaftarAkun";
             this.Load += new System.EventHandler(this.DaftarAkun_Load);
@@ -171,10 +177,10 @@ namespace TugasBesar_KPL
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
