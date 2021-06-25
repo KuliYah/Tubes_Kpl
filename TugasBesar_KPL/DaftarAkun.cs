@@ -12,9 +12,19 @@ namespace TugasBesar_KPL
 {
     public partial class DaftarAkun : Form
     {
+
+        public void cobacoba()
+        {
+            
+        }
         public DaftarAkun()
         {
             InitializeComponent();
+        }
+
+        private void DaftarAkun_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

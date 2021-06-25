@@ -157,6 +157,7 @@ namespace TugasBesar_KPL
             this.Controls.Add(this.label1);
             this.Name = "DaftarAkun";
             this.Text = "DaftarAkun";
+            this.Load += new System.EventHandler(this.DaftarAkun_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
