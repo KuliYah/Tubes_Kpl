@@ -55,7 +55,7 @@ namespace TugasBesar_KPL
                 }
 
 
-                else if (State.MEMINJAMBUKU == posisi || State.PROFILE == posisi || State.LOGOUT) // Keadaan mengembalikan ke menu Dashboard
+                else if (State.MEMINJAMBUKU == posisi || State.PROFILE == posisi || State.LOGOUT == posisi) // Keadaan mengembalikan ke menu Dashboard
                 {
                     if (nextPos == State.DASHBOARD)
                     {
