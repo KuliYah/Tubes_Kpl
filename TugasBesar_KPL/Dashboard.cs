@@ -12,6 +12,7 @@ namespace TugasBesar_KPL
 {
     public partial class Dashboard : Form
     {
+        Automata.State posisi = Automata.State.DASHBOARD, nextPosisi;
         public Dashboard()
         {
             InitializeComponent();
@@ -34,29 +35,48 @@ namespace TugasBesar_KPL
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            Profile menampilkan = new Profile();
-            menampilkan.Show();
+            //Profile menampilkan = new Profile();
+            //menampilkan.Show();
+            nextPosisi = Automata.State.PROFILE;
+            Automata.setPosisi(posisi, nextPosisi);
+            Automata.posisiTransition(nextPosisi);
+
             this.Hide();
         }
 
         private void btnMeminjamBuku_Click(object sender, EventArgs e)
         {
-            MeminjamBuku menampilkan2 = new MeminjamBuku();
-            menampilkan2.Show();
+
+            // MeminjamBuku menampilkan2 = new MeminjamBuku();
+            //menampilkan2.Show();
+            nextPosisi = Automata.State.MEMINJAMBUKU;
+            Automata.setPosisi(posisi, nextPosisi);
+            Automata.posisiTransition(nextPosisi);
+
+
             this.Hide();
 
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            Login menampilkan3 = new Login();
+           
+            nextPosisi = Automata.State.LOGOUT;
+            Automata.setPosisi(posisi, nextPosisi);
+
             const string message = "Apakah anda yakin ingin Melakukan Logout?";
             const string caption = "";
             var result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
-                
-            menampilkan3.Show();
+               
+            Automata.posisiTransition(nextPosisi);
+            
             this.Hide();
+
+        }
+
+        private void btnDoaIbu_Click(object sender, EventArgs e)
+        {
 
         }
     }

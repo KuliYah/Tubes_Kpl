@@ -183,7 +183,7 @@ namespace TugasBesar_KPL
             this.btnDoaIbu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDoaIbu.FlatAppearance.BorderSize = 0;
             this.btnDoaIbu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDoaIbu.Location = new System.Drawing.Point(20, 22);
+            this.btnDoaIbu.Location = new System.Drawing.Point(31, 35);
             this.btnDoaIbu.Name = "btnDoaIbu";
             this.btnDoaIbu.Size = new System.Drawing.Size(152, 175);
             this.btnDoaIbu.TabIndex = 0;
@@ -191,6 +191,7 @@ namespace TugasBesar_KPL
             this.btnDoaIbu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnDoaIbu.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnDoaIbu.UseVisualStyleBackColor = true;
+            this.btnDoaIbu.Click += new System.EventHandler(this.btnDoaIbu_Click);
             // 
             // Dashboard
             // 
