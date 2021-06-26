@@ -16,5 +16,20 @@ namespace TugasBesar_KPL
         {
             InitializeComponent();
         }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MeminjamBuku_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

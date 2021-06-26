@@ -100,7 +100,6 @@ D:\Aji\Tubeskplaji\TugasBesar_KPL\bin\Debug\net5.0-windows\TugasBesar_KPL.pdb
 D:\Aji\Tubeskplaji\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csproj.AssemblyReference.cache
 D:\Aji\Tubeskplaji\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.DaftarAkun.resources
 D:\Aji\Tubeskplaji\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Dashboard.resources
-D:\Aji\Tubeskplaji\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Form1.resources
 D:\Aji\Tubeskplaji\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Login.resources
 D:\Aji\Tubeskplaji\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.MeminjamBuku.resources
 D:\Aji\Tubeskplaji\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Profile.resources
@@ -114,3 +113,4 @@ D:\Aji\Tubeskplaji\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.dll
 D:\Aji\Tubeskplaji\TugasBesar_KPL\obj\Debug\net5.0-windows\ref\TugasBesar_KPL.dll
 D:\Aji\Tubeskplaji\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.pdb
 D:\Aji\Tubeskplaji\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.genruntimeconfig.cache
+D:\Aji\Tubeskplaji\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.DataBuku.resources

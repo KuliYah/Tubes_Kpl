@@ -30,16 +30,16 @@ namespace TugasBesar_KPL
         private void InitializeComponent()
         {
             this.LBLdatabuku = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BTkembali = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.txtStock = new System.Windows.Forms.TextBox();
+            this.BTsubmit = new System.Windows.Forms.Button();
+            this.TBidbuku = new System.Windows.Forms.TextBox();
+            this.TBjudulbuku = new System.Windows.Forms.TextBox();
+            this.TBpenerbit = new System.Windows.Forms.TextBox();
+            this.TBstock = new System.Windows.Forms.TextBox();
             this.LVdatabuku = new System.Windows.Forms.ListView();
             this.id_buku = new System.Windows.Forms.ColumnHeader();
             this.Judul_buku = new System.Windows.Forms.ColumnHeader();
@@ -58,15 +58,15 @@ namespace TugasBesar_KPL
             this.LBLdatabuku.Text = "Data Buku";
             this.LBLdatabuku.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
+            // BTkembali
             // 
-            this.button1.Location = new System.Drawing.Point(56, 66);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "kembali";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BTkembali.Location = new System.Drawing.Point(56, 66);
+            this.BTkembali.Name = "BTkembali";
+            this.BTkembali.Size = new System.Drawing.Size(75, 23);
+            this.BTkembali.TabIndex = 1;
+            this.BTkembali.Text = "kembali";
+            this.BTkembali.UseVisualStyleBackColor = true;
+            this.BTkembali.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -104,42 +104,43 @@ namespace TugasBesar_KPL
             this.label4.TabIndex = 5;
             this.label4.Text = "Stock";
             // 
-            // button2
+            // BTsubmit
             // 
-            this.button2.Location = new System.Drawing.Point(98, 299);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Submit";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BTsubmit.Location = new System.Drawing.Point(98, 299);
+            this.BTsubmit.Name = "BTsubmit";
+            this.BTsubmit.Size = new System.Drawing.Size(75, 23);
+            this.BTsubmit.TabIndex = 6;
+            this.BTsubmit.Text = "Submit";
+            this.BTsubmit.UseVisualStyleBackColor = true;
+            this.BTsubmit.Click += new System.EventHandler(this.BTsubmit_Click);
             // 
-            // textBox1
+            // TBidbuku
             // 
-            this.textBox1.Location = new System.Drawing.Point(256, 122);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(346, 23);
-            this.textBox1.TabIndex = 7;
+            this.TBidbuku.Location = new System.Drawing.Point(256, 122);
+            this.TBidbuku.Name = "TBidbuku";
+            this.TBidbuku.Size = new System.Drawing.Size(346, 23);
+            this.TBidbuku.TabIndex = 7;
             // 
-            // textBox2
+            // TBjudulbuku
             // 
-            this.textBox2.Location = new System.Drawing.Point(256, 160);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(346, 23);
-            this.textBox2.TabIndex = 8;
+            this.TBjudulbuku.Location = new System.Drawing.Point(256, 160);
+            this.TBjudulbuku.Name = "TBjudulbuku";
+            this.TBjudulbuku.Size = new System.Drawing.Size(346, 23);
+            this.TBjudulbuku.TabIndex = 8;
             // 
-            // textBox3
+            // TBpenerbit
             // 
-            this.textBox3.Location = new System.Drawing.Point(256, 203);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(346, 23);
-            this.textBox3.TabIndex = 9;
+            this.TBpenerbit.Location = new System.Drawing.Point(256, 203);
+            this.TBpenerbit.Name = "TBpenerbit";
+            this.TBpenerbit.Size = new System.Drawing.Size(346, 23);
+            this.TBpenerbit.TabIndex = 9;
             // 
-            // txtStock
+            // TBstock
             // 
-            this.txtStock.Location = new System.Drawing.Point(256, 243);
-            this.txtStock.Name = "txtStock";
-            this.txtStock.Size = new System.Drawing.Size(346, 23);
-            this.txtStock.TabIndex = 10;
+            this.TBstock.Location = new System.Drawing.Point(256, 243);
+            this.TBstock.Name = "TBstock";
+            this.TBstock.Size = new System.Drawing.Size(346, 23);
+            this.TBstock.TabIndex = 10;
             // 
             // LVdatabuku
             // 
@@ -155,6 +156,7 @@ namespace TugasBesar_KPL
             this.LVdatabuku.TabIndex = 11;
             this.LVdatabuku.UseCompatibleStateImageBehavior = false;
             this.LVdatabuku.View = System.Windows.Forms.View.Details;
+            this.LVdatabuku.SelectedIndexChanged += new System.EventHandler(this.LVdatabuku_SelectedIndexChanged);
             // 
             // id_buku
             // 
@@ -182,16 +184,16 @@ namespace TugasBesar_KPL
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.LVdatabuku);
-            this.Controls.Add(this.txtStock);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.TBstock);
+            this.Controls.Add(this.TBpenerbit);
+            this.Controls.Add(this.TBjudulbuku);
+            this.Controls.Add(this.TBidbuku);
+            this.Controls.Add(this.BTsubmit);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BTkembali);
             this.Controls.Add(this.LBLdatabuku);
             this.Name = "DataBuku";
             this.RightToLeftLayout = true;
@@ -206,16 +208,16 @@ namespace TugasBesar_KPL
         #endregion
 
         private System.Windows.Forms.Label LBLdatabuku;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BTkembali;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox txtStock;
+        private System.Windows.Forms.Button BTsubmit;
+        private System.Windows.Forms.TextBox TBidbuku;
+        private System.Windows.Forms.TextBox TBjudulbuku;
+        private System.Windows.Forms.TextBox TBpenerbit;
+        private System.Windows.Forms.TextBox TBstock;
         private System.Windows.Forms.ListView LVdatabuku;
         private System.Windows.Forms.ColumnHeader id_buku;
         private System.Windows.Forms.ColumnHeader Judul_buku;

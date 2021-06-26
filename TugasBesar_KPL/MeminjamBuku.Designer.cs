@@ -29,10 +29,20 @@ namespace TugasBesar_KPL
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // MeminjamBuku
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.ClientSize = new System.Drawing.Size(811, 419);
+            this.Name = "MeminjamBuku";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MeminjamBuku";
+            this.Load += new System.EventHandler(this.MeminjamBuku_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
