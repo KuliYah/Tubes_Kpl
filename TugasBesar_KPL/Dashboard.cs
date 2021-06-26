@@ -47,18 +47,17 @@ namespace TugasBesar_KPL
 
         }
 
-        private void btnLogout(object sender, EventArgs e)
+        private void btnLogout_Click(object sender, EventArgs e)
         {
-            const string message = "Apakah anda yakin ingin melakukan Logout?";
+            Login menampilkan3 = new Login();
+            const string message = "Apakah anda yakin ingin Melakukan Logout?";
             const string caption = "";
             var result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes);
-            Login menampilkan3 = new Login();
+            if (result == DialogResult.Yes)
+                
             menampilkan3.Show();
             this.Hide();
-            
 
-            
         }
     }
 }

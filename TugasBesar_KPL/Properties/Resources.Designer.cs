@@ -93,6 +93,16 @@ namespace TugasBesar_KPL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap doa_ibu_cover {
+            get {
+                object obj = ResourceManager.GetObject("doa ibu cover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_close_window_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-close-window-24", resourceCulture);
