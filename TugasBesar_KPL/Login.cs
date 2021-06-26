@@ -3,38 +3,87 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TugasBesar_KPL
 {
-    public partial class lblLogin : Form
-    {
-        public lblLogin()
+   
+    public partial class Login : Form
+    { 
+        List<Pengguna> listUser = new List<Pengguna>();
+        Pengguna user = new Pengguna();
+        DaftarAkun akun = new DaftarAkun();
+        public Login()
         {
             InitializeComponent();
+            getData();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        public void getData()
         {
-
+            for (int i = 0; i < listUser.Count; i++)
+            {
+                listUser[i].getLibId().ToString();
+                listUser[i].getNama().ToString();
+                listUser[i].getEmail().ToString();
+                listUser[i].getNoHP().ToString();
+                listUser[i].getPassword().ToString();
+            }
         }
-
-        private void Login_Load(object sender, EventArgs e)
+        public Boolean ValidLogin()
         {
+            String libid = null;
+            String pass = null;
+            bool Loginvalid = false;
 
+            for (int i = 0; i < listUser.Count; i++)
+            {
+                if(listUser[i].getLibId().ToString() == tbLibraryId.Text && listUser[i].getPassword().ToString() == tbPassword.Text)
+                {
+                    libid = tbLibraryId.Text;
+                    pass = tbPassword.Text;
+                }
+                else
+                {
+                    libid = null;
+                    pass = null;
+                }
+            }
+            
+            if ( libid == tbLibraryId.Text && pass == tbPassword.Text)
+            {
+                Loginvalid = true;
+            }
+            else
+            {
+                Loginvalid = false;
+            }
+
+            return Loginvalid;
         }
 
-        private void btnLibraryId_Click(object sender, EventArgs e)
+        private void lbSignUp_Click(object sender, EventArgs e)
         {
-            const string message = "Apakah anda yakin ingin keluar dari aplikasi?";
-            const string caption = "";
-            var result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-                this.Close();
-
+            DaftarAkun daftar = new DaftarAkun();
+            daftar.Show();
+            this.Hide();
         }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            if(ValidLogin() == true)
+            {
+                MessageBox.Show("Berhasil Login");
+                Dashboard dashboard = new Dashboard();
+                dashboard.Show();
+                this.Hide();
+            }else if(ValidLogin() == false)
+            {
+                MessageBox.Show("Gagal Login");
+
+            }
+        }
+        
     }
 }
