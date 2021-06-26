@@ -63,6 +63,16 @@ namespace TugasBesar_KPL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap avatar50px {
+            get {
+                object obj = ResourceManager.GetObject("avatar50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap danda_komang {
             get {
                 object obj = ResourceManager.GetObject("danda komang", resourceCulture);
@@ -76,6 +86,36 @@ namespace TugasBesar_KPL.Properties {
         internal static System.Drawing.Bitmap Desktop___1__1_ {
             get {
                 object obj = ResourceManager.GetObject("Desktop - 1 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_close_window_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-close-window-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_minimize_window_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-minimize-window-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap peminjaman {
+            get {
+                object obj = ResourceManager.GetObject("peminjaman", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
