@@ -114,3 +114,35 @@ D:\Aji\Tubeskplaji\TugasBesar_KPL\obj\Debug\net5.0-windows\ref\TugasBesar_KPL.dl
 D:\Aji\Tubeskplaji\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.pdb
 D:\Aji\Tubeskplaji\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.genruntimeconfig.cache
 D:\Aji\Tubeskplaji\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.DataBuku.resources
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csprojAssemblyReference.cache
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Dashboard.resources
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.DataBuku.resources
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Data_Pengguna.resources
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Login.resources
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.MeminjamBuku.resources
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Properties.Resources.resources
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csproj.GenerateResource.cache
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.GeneratedMSBuildEditorConfig.editorconfig
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.AssemblyInfoInputs.cache
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.AssemblyInfo.cs
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csproj.CoreCompileInputs.cache
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.dll
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\ref\TugasBesar_KPL.dll
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.pdb
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\TugasBesar_KPL.exe
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\TugasBesar_KPL.deps.json
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\TugasBesar_KPL.runtimeconfig.json
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\TugasBesar_KPL.runtimeconfig.dev.json
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\TugasBesar_KPL.dll
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\ref\TugasBesar_KPL.dll
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\TugasBesar_KPL.pdb
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\Google.Protobuf.dll
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\K4os.Compression.LZ4.Streams.dll
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\K4os.Hash.xxHash.dll
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\MySql.Data.dll
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\Zstandard.Net.dll
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csproj.CopyComplete
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.genruntimeconfig.cache

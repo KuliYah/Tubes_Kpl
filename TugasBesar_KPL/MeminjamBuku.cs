@@ -7,19 +7,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace TugasBesar_KPL
 {
     public partial class MeminjamBuku : Form
     {
+        MySqlConnection conn = new MySqlConnection("server = localhost; uid = root; password=; database = tugasakhir");
+        DataTable dataTable = new DataTable();
         public MeminjamBuku()
         {
             InitializeComponent();
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        public DataTable getDataPeminjaman()
         {
+            dataTable.Reset();
+            dataTable = new DataTable();
+            String query = "Select * From peminjaman";
+            using (MySqlCommand command = new MySqlCommand(query, conn))
+            {
+                conn.Open();
 
+                MySqlDataReader reader = command.ExecuteReader();
+                dataTable.Load(reader);
+            }
+            return dataTable;
+        }
+
+        public void fillDataPeminjaman()
+        {
+            dgvDataPeminjam.DataSource = getDataPeminjaman();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -29,7 +47,7 @@ namespace TugasBesar_KPL
 
         private void MeminjamBuku_Load(object sender, EventArgs e)
         {
-
+            fillDataPeminjaman();
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)

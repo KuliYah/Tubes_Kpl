@@ -37,7 +37,6 @@ namespace TugasBesar_KPL
         {
             //Profile menampilkan = new Profile();
             //menampilkan.Show();
-            nextPosisi = Automata.State.PROFILE;
             Automata.setPosisi(posisi, nextPosisi);
             Automata.posisiTransition(nextPosisi);
 

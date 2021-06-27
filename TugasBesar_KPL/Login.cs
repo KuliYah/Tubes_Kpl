@@ -13,7 +13,7 @@ namespace TugasBesar_KPL
     { 
         List<Pengguna> listUser = new List<Pengguna>();
         Pengguna user = new Pengguna();
-        DaftarAkun akun = new DaftarAkun();
+
         public Login()
         {
             InitializeComponent();
@@ -65,8 +65,8 @@ namespace TugasBesar_KPL
 
         private void lbSignUp_Click(object sender, EventArgs e)
         {
-            DaftarAkun daftar = new DaftarAkun();
-            daftar.Show();
+
+
             this.Hide();
         }
 
