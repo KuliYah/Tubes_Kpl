@@ -169,5 +169,10 @@ namespace TugasBesar_KPL
             dashboard.Show();
             this.Hide();
         }
+
+        private void dgvDataPengguna_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

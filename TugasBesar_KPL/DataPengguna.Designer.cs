@@ -62,6 +62,7 @@ namespace TugasBesar_KPL
             this.dgvDataPengguna.Size = new System.Drawing.Size(805, 246);
             this.dgvDataPengguna.TabIndex = 0;
             this.dgvDataPengguna.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDataPengguna_CellClick);
+            this.dgvDataPengguna.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDataPengguna_CellContentClick);
             // 
             // label1
             // 
@@ -201,7 +202,6 @@ namespace TugasBesar_KPL
             // btnBack
             // 
             this.btnBack.BackColor = System.Drawing.Color.Transparent;
-            this.btnBack.BackgroundImage = global::TugasBesar_KPL.Properties.Resources.backBtn;
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnBack.Location = new System.Drawing.Point(25, 23);
             this.btnBack.Name = "btnBack";

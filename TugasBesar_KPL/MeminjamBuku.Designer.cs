@@ -31,7 +31,7 @@ namespace TugasBesar_KPL
         {
             this.tbLibraryId = new System.Windows.Forms.TextBox();
             this.tbNamaPeminjam = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbIdBuku = new System.Windows.Forms.TextBox();
             this.tbJudulBuku = new System.Windows.Forms.TextBox();
             this.labelLibId = new System.Windows.Forms.Label();
             this.labelNamaPeminjam = new System.Windows.Forms.Label();
@@ -61,14 +61,14 @@ namespace TugasBesar_KPL
             this.tbNamaPeminjam.TabIndex = 1;
             this.tbNamaPeminjam.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // tbIdBuku
             // 
-            this.textBox3.Location = new System.Drawing.Point(361, 145);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(361, 27);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.tbIdBuku.Location = new System.Drawing.Point(361, 145);
+            this.tbIdBuku.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbIdBuku.Name = "tbIdBuku";
+            this.tbIdBuku.Size = new System.Drawing.Size(361, 27);
+            this.tbIdBuku.TabIndex = 2;
+            this.tbIdBuku.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // tbJudulBuku
             // 
@@ -140,6 +140,7 @@ namespace TugasBesar_KPL
             this.button1.TabIndex = 10;
             this.button1.Text = "Kembalikan";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dgvDataPeminjam
             // 
@@ -151,6 +152,7 @@ namespace TugasBesar_KPL
             this.dgvDataPeminjam.RowTemplate.Height = 25;
             this.dgvDataPeminjam.Size = new System.Drawing.Size(834, 200);
             this.dgvDataPeminjam.TabIndex = 11;
+            this.dgvDataPeminjam.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDataPeminjam_CellContentClick);
             // 
             // MeminjamBuku
             // 
@@ -166,7 +168,7 @@ namespace TugasBesar_KPL
             this.Controls.Add(this.labelNamaPeminjam);
             this.Controls.Add(this.labelLibId);
             this.Controls.Add(this.tbJudulBuku);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tbIdBuku);
             this.Controls.Add(this.tbNamaPeminjam);
             this.Controls.Add(this.tbLibraryId);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -184,7 +186,7 @@ namespace TugasBesar_KPL
 
         private System.Windows.Forms.TextBox tbLibraryId;
         private System.Windows.Forms.TextBox tbNamaPeminjam;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbIdBuku;
         private System.Windows.Forms.TextBox tbJudulBuku;
         private System.Windows.Forms.Label labelLibId;
         private System.Windows.Forms.Label labelNamaPeminjam;

@@ -31,6 +31,8 @@ namespace TugasBesar_KPL
 
                 MySqlDataReader reader = command.ExecuteReader();
                 dataTable.Load(reader);
+
+                conn.Close();
             }
             return dataTable;
         }
@@ -81,6 +83,30 @@ namespace TugasBesar_KPL
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            if (tbLibraryId.Text == "" || tbNamaPeminjam.Text == "" || tbIdBuku.Text == "" || tbJudulBuku.Text == "")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand("insert into peminjaman(libraryId, namaPeminjam, id_buku, namaBuku) values(" + tbLibraryId.Text + ",'" + tbNamaPeminjam.Text + "','" + tbIdBuku.Text + "','" + tbJudulBuku.Text + "')",conn);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Succces Input Data");
+                MeminjamBuku refresh = new MeminjamBuku();
+                refresh.Show();
+                this.Hide();
+                //conn.Close();
+            }
+        }
+  
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvDataPeminjam_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
