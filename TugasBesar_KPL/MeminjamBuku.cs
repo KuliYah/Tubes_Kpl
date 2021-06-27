@@ -97,18 +97,39 @@ namespace TugasBesar_KPL
                 MeminjamBuku refresh = new MeminjamBuku();
                 refresh.Show();
                 this.Hide();
-                //conn.Close();
+                conn.Close();
             }
         }
   
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if(tbLibraryId.Text == "")
+            {
+                MessageBox.Show("Library ID kosong, silahkan isi dulu");
+            }
+            else
+            {
+                conn.Open();
+                string query = "delete from peminjaman where libraryId = " + tbLibraryId.Text + ";";
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Berhasil delete");
+                MeminjamBuku refresh = new MeminjamBuku();
+                refresh.Show();
+                this.Hide();
+                conn.Close();
+            }
         }
+
+
 
         private void dgvDataPeminjam_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            tbLibraryId.Text = dgvDataPeminjam.SelectedRows[0].Cells[0].Value.ToString();
+            tbNamaPeminjam.Text = dgvDataPeminjam.SelectedRows[0].Cells[1].Value.ToString();
+            tbIdBuku.Text = dgvDataPeminjam.SelectedRows[0].Cells[2].Value.ToString();
+            tbJudulBuku.Text = dgvDataPeminjam.SelectedRows[0].Cells[3].Value.ToString();
         }
+        
     }
 }

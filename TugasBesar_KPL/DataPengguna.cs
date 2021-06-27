@@ -174,5 +174,10 @@ namespace TugasBesar_KPL
         {
 
         }
+
+        private void Data_Pengguna_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

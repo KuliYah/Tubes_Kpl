@@ -38,7 +38,7 @@ namespace TugasBesar_KPL
             this.labelIdBuku = new System.Windows.Forms.Label();
             this.labelJudulBuku = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnKembalikan = new System.Windows.Forms.Button();
             this.dgvDataPeminjam = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataPeminjam)).BeginInit();
             this.SuspendLayout();
@@ -129,18 +129,18 @@ namespace TugasBesar_KPL
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
-            // button1
+            // btnKembalikan
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(503, 251);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(219, 56);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Kembalikan";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnKembalikan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnKembalikan.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnKembalikan.Location = new System.Drawing.Point(503, 251);
+            this.btnKembalikan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnKembalikan.Name = "btnKembalikan";
+            this.btnKembalikan.Size = new System.Drawing.Size(219, 56);
+            this.btnKembalikan.TabIndex = 10;
+            this.btnKembalikan.Text = "Kembalikan";
+            this.btnKembalikan.UseVisualStyleBackColor = false;
+            this.btnKembalikan.Click += new System.EventHandler(this.button1_Click);
             // 
             // dgvDataPeminjam
             // 
@@ -161,7 +161,7 @@ namespace TugasBesar_KPL
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(927, 559);
             this.Controls.Add(this.dgvDataPeminjam);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnKembalikan);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.labelJudulBuku);
             this.Controls.Add(this.labelIdBuku);
@@ -193,7 +193,7 @@ namespace TugasBesar_KPL
         private System.Windows.Forms.Label labelIdBuku;
         private System.Windows.Forms.Label labelJudulBuku;
         private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnKembalikan;
         private System.Windows.Forms.DataGridView dgvDataPeminjam;
     }
 }

@@ -246,6 +246,7 @@ namespace TugasBesar_KPL
             this.Controls.Add(this.dgvDataPengguna);
             this.Name = "Data_Pengguna";
             this.Text = "Data_Pengguna";
+            this.Load += new System.EventHandler(this.Data_Pengguna_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataPengguna)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
