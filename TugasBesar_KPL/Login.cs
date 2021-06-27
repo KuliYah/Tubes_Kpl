@@ -11,78 +11,39 @@ namespace TugasBesar_KPL
    
     public partial class Login : Form
     { 
-        List<Pengguna> listUser = new List<Pengguna>();
-        Pengguna user = new Pengguna();
+        //Init Variabel
+        
+        Admin user = new Admin();
 
         public Login()
         {
             InitializeComponent();
-            getData();
+            AkunAdmin();
+        }
+        //Set Akun Admin
+        public void AkunAdmin()
+        {
+            user = new Admin("admin", "admin123");
         }
 
-        public void getData()
+        //Defensive Programming untuk login
+        public void SignIn()
         {
-            for (int i = 0; i < listUser.Count; i++)
+            if (user.getLibId() != tbLibraryId.Text && user.getPassword() != tbPassword.Text)
             {
-                listUser[i].getLibId().ToString();
-                listUser[i].getNama().ToString();
-                listUser[i].getEmail().ToString();
-                listUser[i].getNoHP().ToString();
-                listUser[i].getPassword().ToString();
+                throw new ArgumentException();
+               
             }
-        }
-        public Boolean ValidLogin()
-        {
-            String libid = null;
-            String pass = null;
-            bool Loginvalid = false;
-
-            for (int i = 0; i < listUser.Count; i++)
-            {
-                if(listUser[i].getLibId().ToString() == tbLibraryId.Text && listUser[i].getPassword().ToString() == tbPassword.Text)
-                {
-                    libid = tbLibraryId.Text;
-                    pass = tbPassword.Text;
-                }
-                else
-                {
-                    libid = null;
-                    pass = null;
-                }
-            }
-            
-            if ( libid == tbLibraryId.Text && pass == tbPassword.Text)
-            {
-                Loginvalid = true;
-            }
-            else
-            {
-                Loginvalid = false;
-            }
-
-            return Loginvalid;
-        }
-
-        private void lbSignUp_Click(object sender, EventArgs e)
-        {
-
-
-            this.Hide();
-        }
-
-        private void btnConfirm_Click(object sender, EventArgs e)
-        {
-            if(ValidLogin() == true)
-            {
+            //berhasil login
                 MessageBox.Show("Berhasil Login");
                 Dashboard dashboard = new Dashboard();
                 dashboard.Show();
                 this.Hide();
-            }else if(ValidLogin() == false)
-            {
-                MessageBox.Show("Gagal Login");
+        }
 
-            }
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            SignIn();
         }
 
         private void Login_Load(object sender, EventArgs e)

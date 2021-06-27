@@ -35,7 +35,6 @@ namespace TugasBesar_KPL
             this.label3 = new System.Windows.Forms.Label();
             this.tbLibraryId = new System.Windows.Forms.TextBox();
             this.tbPassword = new System.Windows.Forms.TextBox();
-            this.lbSignUp = new System.Windows.Forms.Label();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -83,17 +82,6 @@ namespace TugasBesar_KPL
             this.tbPassword.Size = new System.Drawing.Size(193, 27);
             this.tbPassword.TabIndex = 4;
             // 
-            // lbSignUp
-            // 
-            this.lbSignUp.AutoSize = true;
-            this.lbSignUp.BackColor = System.Drawing.Color.Transparent;
-            this.lbSignUp.Location = new System.Drawing.Point(355, 485);
-            this.lbSignUp.Name = "lbSignUp";
-            this.lbSignUp.Size = new System.Drawing.Size(234, 20);
-            this.lbSignUp.TabIndex = 5;
-            this.lbSignUp.Text = "Belum punya akun? Daftar di sini !";
-            this.lbSignUp.Click += new System.EventHandler(this.lbSignUp_Click);
-            // 
             // btnConfirm
             // 
             this.btnConfirm.Location = new System.Drawing.Point(429, 412);
@@ -111,7 +99,6 @@ namespace TugasBesar_KPL
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(889, 524);
             this.Controls.Add(this.btnConfirm);
-            this.Controls.Add(this.lbSignUp);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.tbLibraryId);
             this.Controls.Add(this.label3);
@@ -132,7 +119,6 @@ namespace TugasBesar_KPL
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbLibraryId;
         private System.Windows.Forms.TextBox tbPassword;
-        private System.Windows.Forms.Label lbSignUp;
         private System.Windows.Forms.Button btnConfirm;
     }
 }

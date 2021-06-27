@@ -29,11 +29,9 @@ D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_K
 D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\ref\TugasBesar_KPL.dll
 D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\TugasBesar_KPL.pdb
 D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csprojAssemblyReference.cache
-D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.DaftarAkun.resources
 D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Dashboard.resources
 D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Login.resources
 D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.MeminjamBuku.resources
-D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Profile.resources
 D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Properties.Resources.resources
 D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csproj.GenerateResource.cache
 D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.GeneratedMSBuildEditorConfig.editorconfig
@@ -146,3 +144,14 @@ K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-
 K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\Zstandard.Net.dll
 K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csproj.CopyComplete
 K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.genruntimeconfig.cache
+D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
+D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\Google.Protobuf.dll
+D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
+D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\K4os.Compression.LZ4.Streams.dll
+D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\K4os.Hash.xxHash.dll
+D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\MySql.Data.dll
+D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
+D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\Zstandard.Net.dll
+D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.DataBuku.resources
+D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Data_Pengguna.resources
+D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csproj.CopyComplete

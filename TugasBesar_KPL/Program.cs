@@ -17,7 +17,7 @@ namespace TugasBesar_KPL
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MeminjamBuku());
+            Application.Run(new Login());
         }
     }
 }

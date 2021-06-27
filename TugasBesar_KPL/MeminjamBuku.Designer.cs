@@ -45,69 +45,73 @@ namespace TugasBesar_KPL
             // 
             // tbLibraryId
             // 
-            this.tbLibraryId.Location = new System.Drawing.Point(316, 28);
+            this.tbLibraryId.Location = new System.Drawing.Point(361, 37);
+            this.tbLibraryId.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbLibraryId.Name = "tbLibraryId";
-            this.tbLibraryId.Size = new System.Drawing.Size(316, 23);
+            this.tbLibraryId.Size = new System.Drawing.Size(361, 27);
             this.tbLibraryId.TabIndex = 0;
             this.tbLibraryId.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tbNamaPeminjam
             // 
-            this.tbNamaPeminjam.Location = new System.Drawing.Point(316, 69);
+            this.tbNamaPeminjam.Location = new System.Drawing.Point(361, 92);
+            this.tbNamaPeminjam.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbNamaPeminjam.Name = "tbNamaPeminjam";
-            this.tbNamaPeminjam.Size = new System.Drawing.Size(316, 23);
+            this.tbNamaPeminjam.Size = new System.Drawing.Size(361, 27);
             this.tbNamaPeminjam.TabIndex = 1;
             this.tbNamaPeminjam.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(316, 109);
+            this.textBox3.Location = new System.Drawing.Point(361, 145);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(316, 23);
+            this.textBox3.Size = new System.Drawing.Size(361, 27);
             this.textBox3.TabIndex = 2;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // tbJudulBuku
             // 
-            this.tbJudulBuku.Location = new System.Drawing.Point(316, 148);
+            this.tbJudulBuku.Location = new System.Drawing.Point(361, 197);
+            this.tbJudulBuku.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbJudulBuku.Name = "tbJudulBuku";
-            this.tbJudulBuku.Size = new System.Drawing.Size(316, 23);
+            this.tbJudulBuku.Size = new System.Drawing.Size(361, 27);
             this.tbJudulBuku.TabIndex = 3;
             this.tbJudulBuku.TextChanged += new System.EventHandler(this.tbJudulBuku_TextChanged);
             // 
             // labelLibId
             // 
             this.labelLibId.AutoSize = true;
-            this.labelLibId.Location = new System.Drawing.Point(180, 35);
+            this.labelLibId.Location = new System.Drawing.Point(206, 47);
             this.labelLibId.Name = "labelLibId";
-            this.labelLibId.Size = new System.Drawing.Size(56, 15);
+            this.labelLibId.Size = new System.Drawing.Size(71, 20);
             this.labelLibId.TabIndex = 4;
             this.labelLibId.Text = "Library Id";
             // 
             // labelNamaPeminjam
             // 
             this.labelNamaPeminjam.AutoSize = true;
-            this.labelNamaPeminjam.Location = new System.Drawing.Point(180, 76);
+            this.labelNamaPeminjam.Location = new System.Drawing.Point(206, 101);
             this.labelNamaPeminjam.Name = "labelNamaPeminjam";
-            this.labelNamaPeminjam.Size = new System.Drawing.Size(96, 15);
+            this.labelNamaPeminjam.Size = new System.Drawing.Size(118, 20);
             this.labelNamaPeminjam.TabIndex = 5;
             this.labelNamaPeminjam.Text = "Nama Peminjam";
             // 
             // labelIdBuku
             // 
             this.labelIdBuku.AutoSize = true;
-            this.labelIdBuku.Location = new System.Drawing.Point(180, 116);
+            this.labelIdBuku.Location = new System.Drawing.Point(206, 155);
             this.labelIdBuku.Name = "labelIdBuku";
-            this.labelIdBuku.Size = new System.Drawing.Size(47, 15);
+            this.labelIdBuku.Size = new System.Drawing.Size(58, 20);
             this.labelIdBuku.TabIndex = 6;
             this.labelIdBuku.Text = "Id Buku";
             // 
             // labelJudulBuku
             // 
             this.labelJudulBuku.AutoSize = true;
-            this.labelJudulBuku.Location = new System.Drawing.Point(180, 155);
+            this.labelJudulBuku.Location = new System.Drawing.Point(206, 207);
             this.labelJudulBuku.Name = "labelJudulBuku";
-            this.labelJudulBuku.Size = new System.Drawing.Size(65, 15);
+            this.labelJudulBuku.Size = new System.Drawing.Size(79, 20);
             this.labelJudulBuku.TabIndex = 7;
             this.labelJudulBuku.Text = "Judul Buku";
             this.labelJudulBuku.Click += new System.EventHandler(this.labelJudulBuku_Click);
@@ -116,20 +120,23 @@ namespace TugasBesar_KPL
             // 
             this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSubmit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSubmit.Location = new System.Drawing.Point(180, 188);
+            this.btnSubmit.Location = new System.Drawing.Point(206, 251);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(192, 42);
+            this.btnSubmit.Size = new System.Drawing.Size(219, 56);
             this.btnSubmit.TabIndex = 8;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(440, 188);
+            this.button1.Location = new System.Drawing.Point(503, 251);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(192, 42);
+            this.button1.Size = new System.Drawing.Size(219, 56);
             this.button1.TabIndex = 10;
             this.button1.Text = "Kembalikan";
             this.button1.UseVisualStyleBackColor = false;
@@ -137,18 +144,20 @@ namespace TugasBesar_KPL
             // dgvDataPeminjam
             // 
             this.dgvDataPeminjam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDataPeminjam.Location = new System.Drawing.Point(48, 257);
+            this.dgvDataPeminjam.Location = new System.Drawing.Point(55, 343);
+            this.dgvDataPeminjam.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvDataPeminjam.Name = "dgvDataPeminjam";
+            this.dgvDataPeminjam.RowHeadersWidth = 51;
             this.dgvDataPeminjam.RowTemplate.Height = 25;
-            this.dgvDataPeminjam.Size = new System.Drawing.Size(730, 150);
+            this.dgvDataPeminjam.Size = new System.Drawing.Size(834, 200);
             this.dgvDataPeminjam.TabIndex = 11;
             // 
             // MeminjamBuku
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(811, 419);
+            this.ClientSize = new System.Drawing.Size(927, 559);
             this.Controls.Add(this.dgvDataPeminjam);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSubmit);
@@ -160,6 +169,7 @@ namespace TugasBesar_KPL
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.tbNamaPeminjam);
             this.Controls.Add(this.tbLibraryId);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MeminjamBuku";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MeminjamBuku";
