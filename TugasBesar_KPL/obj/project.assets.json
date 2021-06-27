@@ -8,19 +8,19 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\danda\\.nuget\\packages\\": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "K:\\KULIAH\\smstr 4\\Konstruksi PL\\tubes\\Tubes_Kpl\\TugasBesar_KPL\\TugasBesar_KPL.csproj",
+      "projectUniqueName": "D:\\CATATAN KULIAH\\2. SEMESTER 4\\Konstruksi PL\\Kelas\\TUBES\\Tubes_Kpl\\TugasBesar_KPL\\TugasBesar_KPL.csproj",
       "projectName": "TugasBesar_KPL",
-      "projectPath": "K:\\KULIAH\\smstr 4\\Konstruksi PL\\tubes\\Tubes_Kpl\\TugasBesar_KPL\\TugasBesar_KPL.csproj",
-      "packagesPath": "C:\\Users\\danda\\.nuget\\packages\\",
-      "outputPath": "K:\\KULIAH\\smstr 4\\Konstruksi PL\\tubes\\Tubes_Kpl\\TugasBesar_KPL\\obj\\",
+      "projectPath": "D:\\CATATAN KULIAH\\2. SEMESTER 4\\Konstruksi PL\\Kelas\\TUBES\\Tubes_Kpl\\TugasBesar_KPL\\TugasBesar_KPL.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "D:\\CATATAN KULIAH\\2. SEMESTER 4\\Konstruksi PL\\Kelas\\TUBES\\Tubes_Kpl\\TugasBesar_KPL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\danda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
