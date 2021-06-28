@@ -16,7 +16,7 @@ namespace TugasBesar_KPL
     {
 
 
-        //PENGGUNAAN AUTOMATA PADA BUTTON KEMBALI
+        //PENGGUNAAN AUTOMATA PADA BUTTON KEMBALI - I KOMANG DANDA PRIYOWITTESA 1302194017
         AutomataDashboard.State posisi = AutomataDashboard.State.PENGEMBALIAN, nextPosisi;
 
         MySqlConnection conn = new MySqlConnection("server = localhost; uid = root; password=; database = tugasakhir");
@@ -114,7 +114,7 @@ namespace TugasBesar_KPL
 
         private void btnKembalikan_Click(object sender, EventArgs e)
         {
-
+            //PENGGUNAAN DEFENSIVE PROGRAMMING - HANDLING EXCEPTION - I KOMANG DANDA PRIYOWITTESA 1302194017
             if (tbLibraryId.Text != "" && tbIdBuku.Text != "")
             {
                 MySqlCommand cmd;
@@ -157,6 +157,7 @@ namespace TugasBesar_KPL
 
         private void btnKembali_Click(object sender, EventArgs e)
         {
+            //PENGGUNAAN AUTOMATA PADA BUTTON KEMBALI - I KOMANG DANDA PRIYOWITTESA 1302194017
             nextPosisi = AutomataDashboard.State.DASHBOARD;
             AutomataDashboard.setPosisi(posisi, nextPosisi);
             AutomataDashboard.posisiTransition(nextPosisi);
