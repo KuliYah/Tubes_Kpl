@@ -114,33 +114,39 @@ namespace TugasBesar_KPL
 
         private void btnKembalikan_Click(object sender, EventArgs e)
         {
-            MySqlCommand cmd;
-            conn.Open();
 
-            try
+            if (tbLibraryId.Text != "" && tbIdBuku.Text != "")
             {
-                cmd = conn.CreateCommand();
-                cmd.CommandText = "delete from peminjaman where id_buku = @idBuku AND libraryId = @LibId";
-                cmd.Parameters.AddWithValue("@LibId", tbLibraryId.Text);
-                cmd.Parameters.AddWithValue("@idBuku", tbIdBuku.Text);
-                cmd.ExecuteNonQuery();
-                conn.Close();
+                MySqlCommand cmd;
+                conn.Open();
+                try
+                {
+                    cmd = conn.CreateCommand();
+                    cmd.CommandText = "delete from peminjaman where id_buku = @idBuku AND libraryId = @LibId";
+                    cmd.Parameters.AddWithValue("@LibId", tbLibraryId.Text);
+                    cmd.Parameters.AddWithValue("@idBuku", tbIdBuku.Text);
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
 
-                MessageBox.Show("Berhasil mengembalikan buku");
+                    MessageBox.Show("Berhasil mengembalikan buku");
 
-                dgvDataPeminjam.Columns.Clear();
-                dataTable1.Clear();
+                    dgvDataPeminjam.Columns.Clear();
+                    dataTable1.Clear();
 
-                dgvPengembalian.Columns.Clear();
-                dataTable2.Clear();
+                    dgvPengembalian.Columns.Clear();
+                    dataTable2.Clear();
 
-                fillDataPengembalian();
-                fillDataPeminjaman();
-                resetKolomPeminjam();
-            }
-            catch (Exception ex)
+                    fillDataPengembalian();
+                    fillDataPeminjaman();
+                    resetKolomPeminjam();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            } else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Library Id dan Id Buku kosong, tekan salah 1 row !");
             }
         }
 

@@ -197,3 +197,4 @@ C:\Users\ihsan\Documents\TubesKPL\Tubes2\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5
 C:\Users\ihsan\Documents\TubesKPL\Tubes2\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.genruntimeconfig.cache
 C:\Users\ihsan\Documents\TubesKPL\Tubes2\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.PengembalianBuku.resources
 C:\Users\ihsan\Documents\TubesKPL\Tubes2\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Login.resources
+K:\KULIAH\smstr 4\Konstruksi PL\tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.PengembalianBuku.resources
