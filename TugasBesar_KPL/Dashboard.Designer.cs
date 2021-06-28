@@ -37,17 +37,19 @@ namespace TugasBesar_KPL
             this.btnClose = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pbLibraryId = new System.Windows.Forms.PictureBox();
+            this.lblPengembalianBuku = new System.Windows.Forms.Label();
+            this.btnPengembalianBuku = new System.Windows.Forms.Button();
             this.lblDataPengguna = new System.Windows.Forms.Label();
             this.lblDataBuku = new System.Windows.Forms.Label();
             this.lblMeminjamBuku = new System.Windows.Forms.Label();
             this.btnDataPengguna = new System.Windows.Forms.Button();
             this.btnDataBuku = new System.Windows.Forms.Button();
             this.btnMeminjamBuku = new System.Windows.Forms.Button();
-            this.lblPengembalianBuku = new System.Windows.Forms.Label();
-            this.btnPengembalianBuku = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLibraryId)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -131,6 +133,7 @@ namespace TugasBesar_KPL
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.pbLibraryId);
             this.panel3.Controls.Add(this.lblPengembalianBuku);
             this.panel3.Controls.Add(this.btnPengembalianBuku);
             this.panel3.Controls.Add(this.lblDataPengguna);
@@ -145,6 +148,41 @@ namespace TugasBesar_KPL
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(853, 410);
             this.panel3.TabIndex = 2;
+            // 
+            // pbLibraryId
+            // 
+            this.pbLibraryId.ErrorImage = null;
+            this.pbLibraryId.Image = global::TugasBesar_KPL.Properties.Resources.lib_id1;
+            this.pbLibraryId.Location = new System.Drawing.Point(296, 18);
+            this.pbLibraryId.Name = "pbLibraryId";
+            this.pbLibraryId.Size = new System.Drawing.Size(199, 88);
+            this.pbLibraryId.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLibraryId.TabIndex = 6;
+            this.pbLibraryId.TabStop = false;
+            // 
+            // lblPengembalianBuku
+            // 
+            this.lblPengembalianBuku.AutoSize = true;
+            this.lblPengembalianBuku.Location = new System.Drawing.Point(271, 242);
+            this.lblPengembalianBuku.Name = "lblPengembalianBuku";
+            this.lblPengembalianBuku.Size = new System.Drawing.Size(113, 15);
+            this.lblPengembalianBuku.TabIndex = 10;
+            this.lblPengembalianBuku.Text = "Pengembalian Buku";
+            this.lblPengembalianBuku.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // btnPengembalianBuku
+            // 
+            this.btnPengembalianBuku.BackgroundImage = global::TugasBesar_KPL.Properties.Resources.pengembalian;
+            this.btnPengembalianBuku.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPengembalianBuku.FlatAppearance.BorderSize = 0;
+            this.btnPengembalianBuku.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPengembalianBuku.Location = new System.Drawing.Point(271, 127);
+            this.btnPengembalianBuku.Name = "btnPengembalianBuku";
+            this.btnPengembalianBuku.Size = new System.Drawing.Size(99, 112);
+            this.btnPengembalianBuku.TabIndex = 9;
+            this.btnPengembalianBuku.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnPengembalianBuku.UseVisualStyleBackColor = true;
+            this.btnPengembalianBuku.Click += new System.EventHandler(this.btnPengembalianBuku_Click);
             // 
             // lblDataPengguna
             // 
@@ -216,30 +254,6 @@ namespace TugasBesar_KPL
             this.btnMeminjamBuku.UseVisualStyleBackColor = true;
             this.btnMeminjamBuku.Click += new System.EventHandler(this.btnMeminjamBuku_Click);
             // 
-            // lblPengembalianBuku
-            // 
-            this.lblPengembalianBuku.AutoSize = true;
-            this.lblPengembalianBuku.Location = new System.Drawing.Point(271, 242);
-            this.lblPengembalianBuku.Name = "lblPengembalianBuku";
-            this.lblPengembalianBuku.Size = new System.Drawing.Size(113, 15);
-            this.lblPengembalianBuku.TabIndex = 10;
-            this.lblPengembalianBuku.Text = "Pengembalian Buku";
-            this.lblPengembalianBuku.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // btnPengembalianBuku
-            // 
-            this.btnPengembalianBuku.BackgroundImage = global::TugasBesar_KPL.Properties.Resources.pengembalian;
-            this.btnPengembalianBuku.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPengembalianBuku.FlatAppearance.BorderSize = 0;
-            this.btnPengembalianBuku.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPengembalianBuku.Location = new System.Drawing.Point(271, 127);
-            this.btnPengembalianBuku.Name = "btnPengembalianBuku";
-            this.btnPengembalianBuku.Size = new System.Drawing.Size(99, 112);
-            this.btnPengembalianBuku.TabIndex = 9;
-            this.btnPengembalianBuku.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnPengembalianBuku.UseVisualStyleBackColor = true;
-            this.btnPengembalianBuku.Click += new System.EventHandler(this.btnPengembalianBuku_Click);
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -257,6 +271,7 @@ namespace TugasBesar_KPL
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLibraryId)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -279,6 +294,7 @@ namespace TugasBesar_KPL
         private System.Windows.Forms.Button btnDataBuku;
         private System.Windows.Forms.Label lblPengembalianBuku;
         private System.Windows.Forms.Button btnPengembalianBuku;
+        private System.Windows.Forms.PictureBox pbLibraryId;
     }
 }
 

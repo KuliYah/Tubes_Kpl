@@ -8,13 +8,13 @@ namespace TugasBesar_KPL
 {
     class TableDrivenAdmin
     {
-        public enum LibraryId { admin, admin2 };
+        public enum LibraryId { admin, admin2 }; //atribut LibraryId
         
-        public static string[] Password = { "admin", "admin2" };
+        public static string[] Password = { "admin", "admin2" }; // atribut Password
 
-        public static string getAdmin(LibraryId libid)
+        public static string getAdmin(LibraryId libid) // method getter
         {
-            return Password[(int)libid];
+            return Password[(int)libid]; // return pasword dan libid
         }
 
     }

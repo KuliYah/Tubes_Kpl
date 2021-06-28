@@ -183,6 +183,26 @@ namespace TugasBesar_KPL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lib_id {
+            get {
+                object obj = ResourceManager.GetObject("lib id", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lib_id1 {
+            get {
+                object obj = ResourceManager.GetObject("lib id1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap peminjaman {
             get {
                 object obj = ResourceManager.GetObject("peminjaman", resourceCulture);

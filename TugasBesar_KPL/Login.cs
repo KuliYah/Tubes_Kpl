@@ -31,8 +31,11 @@ namespace TugasBesar_KPL
             const string caption = "";
             var result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
-                this.Close();
-            Application.Exit();
+            {
+
+                Application.Exit();
+            }
+            else if(result == DialogResult.No){ }
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

@@ -33,18 +33,22 @@ namespace TugasBesar_KPL
             this.btnClose = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pbLibraryId = new System.Windows.Forms.PictureBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblLibraryId = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.tbLibraryId = new System.Windows.Forms.TextBox();
+            this.lblLogin = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLibraryId)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.Controls.Add(this.lblLogin);
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.btnMinimize);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -82,6 +86,7 @@ namespace TugasBesar_KPL
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel2.Controls.Add(this.pbLibraryId);
             this.panel2.Controls.Add(this.lblPassword);
             this.panel2.Controls.Add(this.lblLibraryId);
             this.panel2.Controls.Add(this.btnLogin);
@@ -92,6 +97,17 @@ namespace TugasBesar_KPL
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(384, 331);
             this.panel2.TabIndex = 1;
+            // 
+            // pbLibraryId
+            // 
+            this.pbLibraryId.ErrorImage = null;
+            this.pbLibraryId.Image = global::TugasBesar_KPL.Properties.Resources.lib_id1;
+            this.pbLibraryId.Location = new System.Drawing.Point(98, 20);
+            this.pbLibraryId.Name = "pbLibraryId";
+            this.pbLibraryId.Size = new System.Drawing.Size(174, 73);
+            this.pbLibraryId.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLibraryId.TabIndex = 5;
+            this.pbLibraryId.TabStop = false;
             // 
             // lblPassword
             // 
@@ -113,7 +129,7 @@ namespace TugasBesar_KPL
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(144, 236);
+            this.btnLogin.Location = new System.Drawing.Point(142, 217);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(91, 23);
             this.btnLogin.TabIndex = 2;
@@ -136,6 +152,17 @@ namespace TugasBesar_KPL
             this.tbLibraryId.Size = new System.Drawing.Size(116, 23);
             this.tbLibraryId.TabIndex = 0;
             // 
+            // lblLogin
+            // 
+            this.lblLogin.AutoSize = true;
+            this.lblLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblLogin.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblLogin.Location = new System.Drawing.Point(21, 8);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(53, 19);
+            this.lblLogin.TabIndex = 4;
+            this.lblLogin.Text = "Login";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -148,8 +175,10 @@ namespace TugasBesar_KPL
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLibraryId)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -165,5 +194,7 @@ namespace TugasBesar_KPL
         private System.Windows.Forms.Label lblLibraryId;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnMinimize;
+        private System.Windows.Forms.PictureBox pbLibraryId;
+        private System.Windows.Forms.Label lblLogin;
     }
 }

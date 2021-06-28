@@ -6,8 +6,8 @@
       "version": "5.0.0"
     },
     "additionalProbingPaths": [
-      "C:\\Users\\danda\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\danda\\.nuget\\packages"
+      "C:\\Users\\ihsan\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ihsan\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
