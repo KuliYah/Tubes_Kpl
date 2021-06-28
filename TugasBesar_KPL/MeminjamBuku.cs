@@ -13,15 +13,28 @@ namespace TugasBesar_KPL
 {
     public partial class MeminjamBuku : Form
     {
+        public static MeminjamBuku instance;
+        private MeminjamBuku()
+        {
+            InitializeComponent();
+        }
+
+        public static MeminjamBuku GetInstance()
+        {
+            if (instance == null || instance.IsDisposed)
+            {
+                instance = new MeminjamBuku();
+            }
+            return instance;
+        }
+
+
+
         //PENGGUNAAN AUTOMATA PADA TOMBOL BACK
         AutomataDashboard.State posisi = AutomataDashboard.State.MEMINJAMBUKU, nextPosisi;
 
         MySqlConnection conn = new MySqlConnection("server = localhost; uid = root; password=; database = tugasakhir");
         DataTable dataTable = new DataTable();
-        public MeminjamBuku()
-        {
-            InitializeComponent();
-        }
 
         public DataTable getDataPeminjaman()
         {
