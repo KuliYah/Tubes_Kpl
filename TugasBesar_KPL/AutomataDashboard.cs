@@ -7,12 +7,13 @@ using System.Windows.Forms;
 
 namespace TugasBesar_KPL
 {
-    class Automata
+    class AutomataDashboard
     {
-        public enum State { LOGIN, DASHBOARD, MEMINJAMBUKU, DATABUKU, DATAPENGGUNA, LOGOUT }; //Atribut State
+        
+        public enum State { LOGIN, DASHBOARD, MEMINJAMBUKU, DATABUKU, DATAPENGGUNA, PENGEMBALIAN, LOGOUT }; //Atribut State
         public static State posisi, nextPosisi;
 
-        public Automata() { }
+        public AutomataDashboard() { }
 
         public static void setPosisi(State pos, State nextPos) //Setter keadaan posisi automata
         {
@@ -53,25 +54,29 @@ namespace TugasBesar_KPL
                     DataBuku dataBuku = new DataBuku();
                     dataBuku.Show(); // maka show form Data Buku
                 }
-
+                else if (nextPos == State.PENGEMBALIAN) //Kemudian jika posisi state selanjutnya = PENGEMBALIAN
+                {
+                    PengembalianBuku pengembalianBuku = new PengembalianBuku();
+                    pengembalianBuku.Show(); // maka show form Pengembalian buku
+                }
                 else if (nextPos == State.LOGOUT) //Kemudian jika posisi state selanjutnya = LOGOUT
                 {
                     Login logout = new Login();
                     logout.Show(); // maka show form Login
 
                 }
+            }
+        
 
-
-                else if (State.MEMINJAMBUKU == posisi || State.DATAPENGGUNA == posisi || State.DATABUKU == posisi || State.LOGOUT == posisi) // Keadaan mengembalikan ke menu Dashboard
+            else if ( State.MEMINJAMBUKU == posisi  || State.LOGIN == posisi ||  State.DATAPENGGUNA == posisi ||  State.DATABUKU == posisi  ||  State.LOGOUT == posisi  ||  State.PENGEMBALIAN == posisi ) // Keadaan mengembalikan ke menu Dashboard
+            {
+                if (nextPos == State.DASHBOARD)
                 {
-                    if (nextPos == State.DASHBOARD)
-                    {
-                        Dashboard dashboard = new Dashboard();
-                        dashboard.Show();
-                    }
+                    Dashboard dashboard = new Dashboard();
+                    dashboard.Show();
                 }
+            }
             }
 
         }
     }
-}

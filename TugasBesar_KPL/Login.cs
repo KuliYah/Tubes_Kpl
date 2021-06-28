@@ -3,51 +3,66 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TugasBesar_KPL
 {
-   
     public partial class Login : Form
-    { 
-        //Init Variabel
-        
-        Admin user = new Admin();
-
+    {
+        AutomataDashboard.State posisi = AutomataDashboard.State.LOGIN, nextPosisi;
         public Login()
         {
             InitializeComponent();
-            AkunAdmin();
-        }
-        //Set Akun Admin
-        public void AkunAdmin()
-        {
-            user = new Admin("admin", "admin123");
         }
 
-        //Defensive Programming untuk login
-        public void SignIn()
+        string LibraryId, Password;
+
+        private void btnMinimize_Click(object sender, EventArgs e)
         {
-            if (user.getLibId() != tbLibraryId.Text && user.getPassword() != tbPassword.Text)
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            const string message = "Apakah anda yakin ingin keluar dari aplikasi?";
+            const string caption = "";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+                this.Close();
+            Application.Exit();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            try
             {
-                throw new ArgumentException();
-               
+                Enum LibID = TableDrivenAdmin.LibraryId.admin;
+                LibraryId = LibID.ToString();
+                Password = TableDrivenAdmin.getAdmin(TableDrivenAdmin.LibraryId.admin);
+
+
+                if ((tbLibraryId.Text == LibraryId) && (tbPassword.Text == Password))
+                {
+                    MessageBox.Show("Selamat anda berhasil login");
+                    nextPosisi = AutomataDashboard.State.DASHBOARD;
+                    AutomataDashboard.setPosisi(posisi, nextPosisi);
+                    AutomataDashboard.posisiTransition(nextPosisi);
+                    this.Hide();
+
+                }
+                else
+                {
+                    MessageBox.Show("Library id atau Password anda salah");
+                }
             }
-            //berhasil login
-                MessageBox.Show("Berhasil Login");
-                Dashboard dashboard = new Dashboard();
-                dashboard.Show();
-                this.Hide();
-        }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
-        private void btnConfirm_Click(object sender, EventArgs e)
-        {
-            SignIn();
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
 
         }
     }

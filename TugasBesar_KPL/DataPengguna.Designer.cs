@@ -216,8 +216,9 @@ namespace TugasBesar_KPL
             this.btnBack.Location = new System.Drawing.Point(22, 17);
             this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(43, 22);
+            this.btnBack.Size = new System.Drawing.Size(62, 22);
             this.btnBack.TabIndex = 15;
+            this.btnBack.Text = "Kembali";
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 

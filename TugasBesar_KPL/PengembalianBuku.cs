@@ -14,8 +14,11 @@ namespace TugasBesar_KPL
 {
     public partial class PengembalianBuku : Form
     {
+
+
         //PENGGUNAAN AUTOMATA PADA BUTTON KEMBALI
-        //tulis disini san
+        AutomataDashboard.State posisi = AutomataDashboard.State.PENGEMBALIAN, nextPosisi;
+
         MySqlConnection conn = new MySqlConnection("server = localhost; uid = root; password=; database = tugasakhir");
         DataTable dataTable1 = new DataTable();
         DataTable dataTable2 = new DataTable();
@@ -148,7 +151,10 @@ namespace TugasBesar_KPL
 
         private void btnKembali_Click(object sender, EventArgs e)
         {
-
+            nextPosisi = AutomataDashboard.State.DASHBOARD;
+            AutomataDashboard.setPosisi(posisi, nextPosisi);
+            AutomataDashboard.posisiTransition(nextPosisi);
+            this.Hide();
         }
     }
 }

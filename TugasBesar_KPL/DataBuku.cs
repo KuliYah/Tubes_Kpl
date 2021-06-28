@@ -13,6 +13,9 @@ namespace TugasBesar_KPL
 {
     public partial class DataBuku : Form
     {
+        AutomataDashboard.State posisi = AutomataDashboard.State.DATABUKU, nextPosisi;
+
+
         MySqlConnection conn = new MySqlConnection("server = localhost; uid = root; password=; database = tugasakhir");
         DataTable ListBuku = new DataTable();
         MySqlCommand cmd = new  MySqlCommand();
@@ -52,8 +55,9 @@ namespace TugasBesar_KPL
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Dashboard dashboard = new Dashboard();
-            dashboard.Show();
+            nextPosisi = AutomataDashboard.State.DASHBOARD;
+            AutomataDashboard.setPosisi(posisi, nextPosisi);
+            AutomataDashboard.posisiTransition(nextPosisi);
             this.Hide();
         }
 

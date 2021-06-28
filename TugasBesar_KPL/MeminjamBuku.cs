@@ -14,7 +14,7 @@ namespace TugasBesar_KPL
     public partial class MeminjamBuku : Form
     {
         //PENGGUNAAN AUTOMATA PADA TOMBOL BACK
-        Automata.State posisi = Automata.State.MEMINJAMBUKU, nextPosisi;
+        AutomataDashboard.State posisi = AutomataDashboard.State.MEMINJAMBUKU, nextPosisi;
 
         MySqlConnection conn = new MySqlConnection("server = localhost; uid = root; password=; database = tugasakhir");
         DataTable dataTable = new DataTable();
@@ -176,9 +176,9 @@ namespace TugasBesar_KPL
         private void btnKembali_Click(object sender, EventArgs e)
         {
             //PENGGUNAAN AUTOMATA
-            nextPosisi = Automata.State.DASHBOARD;
-            Automata.setPosisi(posisi, nextPosisi);
-            Automata.posisiTransition(nextPosisi);
+            nextPosisi = AutomataDashboard.State.DASHBOARD;
+            AutomataDashboard.setPosisi(posisi, nextPosisi);
+            AutomataDashboard.posisiTransition(nextPosisi);
             this.Hide();
         }
     }

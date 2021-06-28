@@ -43,6 +43,8 @@ namespace TugasBesar_KPL
             this.btnDataPengguna = new System.Windows.Forms.Button();
             this.btnDataBuku = new System.Windows.Forms.Button();
             this.btnMeminjamBuku = new System.Windows.Forms.Button();
+            this.lblPengembalianBuku = new System.Windows.Forms.Label();
+            this.btnPengembalianBuku = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -129,6 +131,8 @@ namespace TugasBesar_KPL
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.lblPengembalianBuku);
+            this.panel3.Controls.Add(this.btnPengembalianBuku);
             this.panel3.Controls.Add(this.lblDataPengguna);
             this.panel3.Controls.Add(this.lblDataBuku);
             this.panel3.Controls.Add(this.lblMeminjamBuku);
@@ -145,7 +149,7 @@ namespace TugasBesar_KPL
             // lblDataPengguna
             // 
             this.lblDataPengguna.AutoSize = true;
-            this.lblDataPengguna.Location = new System.Drawing.Point(581, 248);
+            this.lblDataPengguna.Location = new System.Drawing.Point(596, 242);
             this.lblDataPengguna.Name = "lblDataPengguna";
             this.lblDataPengguna.Size = new System.Drawing.Size(94, 15);
             this.lblDataPengguna.TabIndex = 8;
@@ -155,7 +159,7 @@ namespace TugasBesar_KPL
             // lblDataBuku
             // 
             this.lblDataBuku.AutoSize = true;
-            this.lblDataBuku.Location = new System.Drawing.Point(380, 248);
+            this.lblDataBuku.Location = new System.Drawing.Point(450, 242);
             this.lblDataBuku.Name = "lblDataBuku";
             this.lblDataBuku.Size = new System.Drawing.Size(61, 15);
             this.lblDataBuku.TabIndex = 7;
@@ -164,7 +168,7 @@ namespace TugasBesar_KPL
             // lblMeminjamBuku
             // 
             this.lblMeminjamBuku.AutoSize = true;
-            this.lblMeminjamBuku.Location = new System.Drawing.Point(152, 248);
+            this.lblMeminjamBuku.Location = new System.Drawing.Point(116, 242);
             this.lblMeminjamBuku.Name = "lblMeminjamBuku";
             this.lblMeminjamBuku.Size = new System.Drawing.Size(95, 15);
             this.lblMeminjamBuku.TabIndex = 6;
@@ -176,7 +180,7 @@ namespace TugasBesar_KPL
             this.btnDataPengguna.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDataPengguna.FlatAppearance.BorderSize = 0;
             this.btnDataPengguna.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDataPengguna.Location = new System.Drawing.Point(581, 133);
+            this.btnDataPengguna.Location = new System.Drawing.Point(596, 127);
             this.btnDataPengguna.Name = "btnDataPengguna";
             this.btnDataPengguna.Size = new System.Drawing.Size(99, 112);
             this.btnDataPengguna.TabIndex = 5;
@@ -190,7 +194,7 @@ namespace TugasBesar_KPL
             this.btnDataBuku.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDataBuku.FlatAppearance.BorderSize = 0;
             this.btnDataBuku.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDataBuku.Location = new System.Drawing.Point(361, 133);
+            this.btnDataBuku.Location = new System.Drawing.Point(431, 127);
             this.btnDataBuku.Name = "btnDataBuku";
             this.btnDataBuku.Size = new System.Drawing.Size(99, 112);
             this.btnDataBuku.TabIndex = 4;
@@ -200,17 +204,41 @@ namespace TugasBesar_KPL
             // 
             // btnMeminjamBuku
             // 
-            this.btnMeminjamBuku.BackgroundImage = global::TugasBesar_KPL.Properties.Resources.peminjaman;
+            this.btnMeminjamBuku.BackgroundImage = global::TugasBesar_KPL.Properties.Resources.lap_peminjaman;
             this.btnMeminjamBuku.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMeminjamBuku.FlatAppearance.BorderSize = 0;
             this.btnMeminjamBuku.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMeminjamBuku.Location = new System.Drawing.Point(148, 133);
+            this.btnMeminjamBuku.Location = new System.Drawing.Point(112, 127);
             this.btnMeminjamBuku.Name = "btnMeminjamBuku";
             this.btnMeminjamBuku.Size = new System.Drawing.Size(99, 112);
             this.btnMeminjamBuku.TabIndex = 2;
             this.btnMeminjamBuku.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMeminjamBuku.UseVisualStyleBackColor = true;
             this.btnMeminjamBuku.Click += new System.EventHandler(this.btnMeminjamBuku_Click);
+            // 
+            // lblPengembalianBuku
+            // 
+            this.lblPengembalianBuku.AutoSize = true;
+            this.lblPengembalianBuku.Location = new System.Drawing.Point(271, 242);
+            this.lblPengembalianBuku.Name = "lblPengembalianBuku";
+            this.lblPengembalianBuku.Size = new System.Drawing.Size(113, 15);
+            this.lblPengembalianBuku.TabIndex = 10;
+            this.lblPengembalianBuku.Text = "Pengembalian Buku";
+            this.lblPengembalianBuku.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // btnPengembalianBuku
+            // 
+            this.btnPengembalianBuku.BackgroundImage = global::TugasBesar_KPL.Properties.Resources.pengembalian;
+            this.btnPengembalianBuku.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPengembalianBuku.FlatAppearance.BorderSize = 0;
+            this.btnPengembalianBuku.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPengembalianBuku.Location = new System.Drawing.Point(271, 127);
+            this.btnPengembalianBuku.Name = "btnPengembalianBuku";
+            this.btnPengembalianBuku.Size = new System.Drawing.Size(99, 112);
+            this.btnPengembalianBuku.TabIndex = 9;
+            this.btnPengembalianBuku.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnPengembalianBuku.UseVisualStyleBackColor = true;
+            this.btnPengembalianBuku.Click += new System.EventHandler(this.btnPengembalianBuku_Click);
             // 
             // Dashboard
             // 
@@ -249,6 +277,8 @@ namespace TugasBesar_KPL
         private System.Windows.Forms.Label lblMeminjamBuku;
         private System.Windows.Forms.Button btnDataPengguna;
         private System.Windows.Forms.Button btnDataBuku;
+        private System.Windows.Forms.Label lblPengembalianBuku;
+        private System.Windows.Forms.Button btnPengembalianBuku;
     }
 }
 

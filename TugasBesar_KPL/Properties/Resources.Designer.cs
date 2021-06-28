@@ -173,9 +173,29 @@ namespace TugasBesar_KPL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lap_peminjaman {
+            get {
+                object obj = ResourceManager.GetObject("lap peminjaman", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap peminjaman {
             get {
                 object obj = ResourceManager.GetObject("peminjaman", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pengembalian {
+            get {
+                object obj = ResourceManager.GetObject("pengembalian", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
