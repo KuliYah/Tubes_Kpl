@@ -11,13 +11,15 @@ using MySql.Data.MySqlClient;
 
 namespace TugasBesar_KPL
 {
+    //Rizky Naufal Alghifari
     public partial class Data_Pengguna : Form
     {
-        AutomataDashboard.State posisi = AutomataDashboard.State.DATAPENGGUNA, nextPosisi;
-
+        
+        //Init Variable
         MySqlConnection conn = new MySqlConnection("server = localhost; uid = root; password=; database = tugasakhir");
         DataTable listPengguna = new DataTable();
         MySqlCommand cmd = new MySqlCommand();
+        public static Data_Pengguna instance;
         public Data_Pengguna()
         {
             InitializeComponent();
@@ -25,6 +27,17 @@ namespace TugasBesar_KPL
             setDisabled();
        
         }
+       
+        //Design Pattern
+        public static Data_Pengguna GetInstance()
+        {
+            if (instance == null || instance.IsDisposed)
+            {
+                instance = new Data_Pengguna();
+            }
+            return instance;
+        }
+        //Set Data Table
         public DataTable getDataPengguna()
         {
             
@@ -39,6 +52,19 @@ namespace TugasBesar_KPL
             }
             conn.Close();
             return listPengguna;
+        }
+        //Defensive Programming
+        public void AddMember(String libId)
+        {
+            libId = tbLibId.Text;
+            conn.Open();
+            cmd = new MySqlCommand("SELECT libraryId FROM member", conn);
+            MySqlDataReader reader = cmd.ExecuteReader();
+            conn.Close();
+            if(libId == reader.ToString())
+            {
+                throw new ArgumentException();
+            }
         }
         public void setTextBox(DataGridViewCellEventArgs e)
         {  
@@ -62,12 +88,14 @@ namespace TugasBesar_KPL
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            String libId = tbLibId.Text;
             try
             {
                 MessageBoxButtons button = MessageBoxButtons.YesNo;
                 DialogResult result = MessageBox.Show("Apakah anda yakin ADD data?", "Add Data", button);
                 if (result == DialogResult.Yes)
                 {
+                    AddMember(libId);
                     conn.Open();
                     cmd = new MySqlCommand("INSERT INTO member (libraryId, nama, email, noHp, password) VALUES('" +tbLibId.Text +"','" + tbNama.Text + "','"+ tbEmail.Text + "','" + tbNohp.Text + "','" + tbPass.Text + "')", conn);
                     cmd.ExecuteNonQuery();
@@ -96,7 +124,6 @@ namespace TugasBesar_KPL
             tbLibId.Enabled = false;
             
             setTextBox(e);
-            
 
         }
 
@@ -168,9 +195,8 @@ namespace TugasBesar_KPL
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            nextPosisi = AutomataDashboard.State.DASHBOARD;
-            AutomataDashboard.setPosisi(posisi, nextPosisi);
-            AutomataDashboard.posisiTransition(nextPosisi);
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
             this.Hide();
         }
 
@@ -178,6 +204,21 @@ namespace TugasBesar_KPL
         {
 
         }
+
+        private void btnJumlah_Click(object sender, EventArgs e)
+        {
+            //PENGGUNAAN GENERIC - I KOMANG DANDA PRIYOWITTESA 1302194017
+            JumlahMember<int> hitung = new JumlahMember<int>();
+            hitung.Member = dgvDataPengguna.RowCount - 1;
+            row.Text = hitung.Member.ToString();
+        }
+
+        class JumlahMember<T>
+        {
+            //PENGGUNAAN GENERIC - I KOMANG DANDA PRIYOWITTESA 1302194017
+            public T Member { get; set; }
+        }
+    
 
         private void Data_Pengguna_Load(object sender, EventArgs e)
         {

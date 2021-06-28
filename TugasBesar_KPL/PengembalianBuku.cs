@@ -169,6 +169,11 @@ namespace TugasBesar_KPL
             public T Pengembalian { get; set; }
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnKembali_Click(object sender, EventArgs e)
         {
             //PENGGUNAAN AUTOMATA PADA BUTTON KEMBALI - I KOMANG DANDA PRIYOWITTESA 1302194017
