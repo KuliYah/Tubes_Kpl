@@ -57,6 +57,7 @@ namespace TugasBesar_KPL
             this.btnKembali.TabIndex = 26;
             this.btnKembali.Text = "Kembali";
             this.btnKembali.UseVisualStyleBackColor = false;
+            this.btnKembali.Click += new System.EventHandler(this.btnKembali_Click);
             // 
             // btnKembalikan
             // 

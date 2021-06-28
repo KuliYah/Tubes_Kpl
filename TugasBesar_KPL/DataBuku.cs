@@ -17,6 +17,10 @@ namespace TugasBesar_KPL
         DataTable ListBuku = new DataTable();
         MySqlCommand cmd = new  MySqlCommand();
 
+        private DataSet ds;
+        private MySqlDataAdapter da;
+
+
         public DataBuku()
         {
             InitializeComponent();
@@ -60,19 +64,19 @@ namespace TugasBesar_KPL
             try
             {
                 MessageBoxButtons button = MessageBoxButtons.YesNo;
-                DialogResult result = MessageBox.Show("Apakah anda yakin ADD data?", "Add Data", button);
+                DialogResult result = MessageBox.Show("Apakah anda yakin ingin submit data?", "submit Data", button);
                 if (result == DialogResult.Yes)
                 {
                     conn.Open();
                     cmd = new MySqlCommand("INSERT INTO buku (id_buku, judul_buku, penerbit, stok) VALUES('" + TBidbuku.Text + "','" + TBjudulbuku.Text + "','" + TBpenerbit.Text + "','" + TBstock.Text + "')", conn);
                     cmd.ExecuteNonQuery();
                     conn.Close();
-                    MessageBox.Show("Berhasil Add");
+                    MessageBox.Show("Berhasil submit");
                     DGVdatabuku.DataSource = getDataBuku();
                 }
                 else
                 {
-                    //Do Nothing
+                    
                 }
             }
             catch (Exception ex)
@@ -82,6 +86,53 @@ namespace TugasBesar_KPL
 
         }
 
+        private void DGVdatabuku_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            BTsubmit.Visible = false;
 
+            DataGridViewRow row = this.DGVdatabuku.Rows[e.RowIndex];
+            TBidbuku.Text = row.Cells[0].Value.ToString();
+            TBjudulbuku.Text = row.Cells[1].Value.ToString();
+            TBpenerbit.Text = row.Cells[2].Value.ToString();
+            TBstock.Text = row.Cells[3].Value.ToString();
+
+        }
+
+        private void BTback_Click(object sender, EventArgs e)
+        {
+            BTsubmit.Visible = true;
+            TBidbuku.Text = "";
+            TBjudulbuku.Text = "";
+            TBpenerbit.Text = "";
+            TBstock.Text = "";
+
+        }
+
+        private void BTcari_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                conn.Open();
+                cmd = new MySqlCommand("select *from buku where judul_buku like '%" + TBcari.Text + "%' ", conn);
+                ds = new DataSet();
+                da = new MySqlDataAdapter(cmd);
+                da.Fill(ds, "buku");
+                DGVdatabuku.DataSource = ds;
+                DGVdatabuku.DataMember = "buku";
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            } 
+
+          
+          
+        }
     }
 }

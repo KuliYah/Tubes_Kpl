@@ -41,6 +41,11 @@ namespace TugasBesar_KPL
             this.TBpenerbit = new System.Windows.Forms.TextBox();
             this.TBstock = new System.Windows.Forms.TextBox();
             this.DGVdatabuku = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.TBcari = new System.Windows.Forms.TextBox();
+            this.BTcari = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.BTback = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DGVdatabuku)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,9 +108,10 @@ namespace TugasBesar_KPL
             // 
             // BTsubmit
             // 
-            this.BTsubmit.Location = new System.Drawing.Point(256, 291);
+            this.BTsubmit.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BTsubmit.Location = new System.Drawing.Point(148, 284);
             this.BTsubmit.Name = "BTsubmit";
-            this.BTsubmit.Size = new System.Drawing.Size(75, 23);
+            this.BTsubmit.Size = new System.Drawing.Size(84, 39);
             this.BTsubmit.TabIndex = 6;
             this.BTsubmit.Text = "Submit";
             this.BTsubmit.UseVisualStyleBackColor = true;
@@ -143,11 +149,57 @@ namespace TugasBesar_KPL
             // 
             this.DGVdatabuku.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.DGVdatabuku.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVdatabuku.Location = new System.Drawing.Point(176, 329);
+            this.DGVdatabuku.Location = new System.Drawing.Point(148, 381);
             this.DGVdatabuku.Name = "DGVdatabuku";
             this.DGVdatabuku.RowTemplate.Height = 25;
-            this.DGVdatabuku.Size = new System.Drawing.Size(448, 150);
+            this.DGVdatabuku.Size = new System.Drawing.Size(474, 150);
             this.DGVdatabuku.TabIndex = 11;
+            this.DGVdatabuku.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVdatabuku_CellClick);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(238, 352);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(121, 15);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Cari bedasarkan buku";
+            // 
+            // TBcari
+            // 
+            this.TBcari.Location = new System.Drawing.Point(388, 349);
+            this.TBcari.Name = "TBcari";
+            this.TBcari.Size = new System.Drawing.Size(141, 23);
+            this.TBcari.TabIndex = 13;
+            // 
+            // BTcari
+            // 
+            this.BTcari.Location = new System.Drawing.Point(547, 348);
+            this.BTcari.Name = "BTcari";
+            this.BTcari.Size = new System.Drawing.Size(75, 23);
+            this.BTcari.TabIndex = 14;
+            this.BTcari.Text = "cari";
+            this.BTcari.UseVisualStyleBackColor = true;
+            this.BTcari.Click += new System.EventHandler(this.BTcari_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(84, 352);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 15);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Data buku";
+            // 
+            // BTback
+            // 
+            this.BTback.Location = new System.Drawing.Point(157, 348);
+            this.BTback.Name = "BTback";
+            this.BTback.Size = new System.Drawing.Size(75, 23);
+            this.BTback.TabIndex = 16;
+            this.BTback.Text = "back";
+            this.BTback.UseVisualStyleBackColor = true;
+            this.BTback.Click += new System.EventHandler(this.BTback_Click);
             // 
             // DataBuku
             // 
@@ -155,6 +207,11 @@ namespace TugasBesar_KPL
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(764, 554);
+            this.Controls.Add(this.BTback);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.BTcari);
+            this.Controls.Add(this.TBcari);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.DGVdatabuku);
             this.Controls.Add(this.TBstock);
             this.Controls.Add(this.TBpenerbit);
@@ -191,5 +248,10 @@ namespace TugasBesar_KPL
         private System.Windows.Forms.TextBox TBpenerbit;
         private System.Windows.Forms.TextBox TBstock;
         private System.Windows.Forms.DataGridView DGVdatabuku;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox TBcari;
+        private System.Windows.Forms.Button BTcari;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button BTback;
     }
 }
