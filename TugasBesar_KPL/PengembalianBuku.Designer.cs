@@ -45,6 +45,9 @@ namespace TugasBesar_KPL
             this.label1 = new System.Windows.Forms.Label();
             this.dgvPengembalian = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.RowPengembalian = new System.Windows.Forms.Label();
+            this.btnHitungPengembalian = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataPeminjam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPengembalian)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +67,7 @@ namespace TugasBesar_KPL
             // 
             this.btnKembalikan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnKembalikan.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnKembalikan.Location = new System.Drawing.Point(314, 203);
+            this.btnKembalikan.Location = new System.Drawing.Point(210, 199);
             this.btnKembalikan.Name = "btnKembalikan";
             this.btnKembalikan.Size = new System.Drawing.Size(192, 42);
             this.btnKembalikan.TabIndex = 25;
@@ -76,7 +79,7 @@ namespace TugasBesar_KPL
             // 
             this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnReset.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnReset.Location = new System.Drawing.Point(512, 203);
+            this.btnReset.Location = new System.Drawing.Point(408, 199);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(71, 42);
             this.btnReset.TabIndex = 24;
@@ -187,12 +190,44 @@ namespace TugasBesar_KPL
             this.label2.TabIndex = 29;
             this.label2.Text = "Data Pengembalian";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(551, 254);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(151, 15);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "Jumlah Data Pengembalian";
+            // 
+            // RowPengembalian
+            // 
+            this.RowPengembalian.AutoSize = true;
+            this.RowPengembalian.Location = new System.Drawing.Point(709, 253);
+            this.RowPengembalian.Name = "RowPengembalian";
+            this.RowPengembalian.Size = new System.Drawing.Size(0, 15);
+            this.RowPengembalian.TabIndex = 31;
+            // 
+            // btnHitungPengembalian
+            // 
+            this.btnHitungPengembalian.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnHitungPengembalian.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnHitungPengembalian.Location = new System.Drawing.Point(485, 199);
+            this.btnHitungPengembalian.Name = "btnHitungPengembalian";
+            this.btnHitungPengembalian.Size = new System.Drawing.Size(170, 40);
+            this.btnHitungPengembalian.TabIndex = 32;
+            this.btnHitungPengembalian.Text = "Hitung Data Pengembalian";
+            this.btnHitungPengembalian.UseVisualStyleBackColor = false;
+            this.btnHitungPengembalian.Click += new System.EventHandler(this.btnHitungPengembalian_Click);
+            // 
             // PengembalianBuku
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnHitungPengembalian);
+            this.Controls.Add(this.RowPengembalian);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvPengembalian);
             this.Controls.Add(this.label1);
@@ -235,5 +270,8 @@ namespace TugasBesar_KPL
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvPengembalian;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label RowPengembalian;
+        private System.Windows.Forms.Button btnHitungPengembalian;
     }
 }

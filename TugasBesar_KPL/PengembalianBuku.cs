@@ -155,6 +155,20 @@ namespace TugasBesar_KPL
 
         }
 
+        private void btnHitungPengembalian_Click(object sender, EventArgs e)
+        {
+            //PENGGUNAAN GENERIC - I KOMANG DANDA PRIYOWITTESA 1302194017
+            DataPengembalian<int> hitung = new DataPengembalian<int>();
+            hitung.Pengembalian = dgvPengembalian.RowCount-1;
+            RowPengembalian.Text = hitung.Pengembalian.ToString();
+        }
+
+        class DataPengembalian<T>
+        {
+            //PENGGUNAAN GENERIC - I KOMANG DANDA PRIYOWITTESA 1302194017
+            public T Pengembalian { get; set; }
+        }
+
         private void btnKembali_Click(object sender, EventArgs e)
         {
             //PENGGUNAAN AUTOMATA PADA BUTTON KEMBALI - I KOMANG DANDA PRIYOWITTESA 1302194017
