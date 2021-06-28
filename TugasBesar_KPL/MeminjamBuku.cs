@@ -31,8 +31,7 @@ namespace TugasBesar_KPL
 
                 MySqlDataReader reader = command.ExecuteReader();
                 dataTable.Load(reader);
-
-                conn.Close();
+                
             }
             return dataTable;
         }
@@ -40,6 +39,7 @@ namespace TugasBesar_KPL
         public void fillDataPeminjaman()
         {
             dgvDataPeminjam.DataSource = getDataPeminjaman();
+            conn.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -50,6 +50,7 @@ namespace TugasBesar_KPL
         private void MeminjamBuku_Load(object sender, EventArgs e)
         {
             fillDataPeminjaman();
+            btnReset.Enabled = false;
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -90,46 +91,104 @@ namespace TugasBesar_KPL
             }
             else
             {
+                MySqlCommand cmd;
                 conn.Open();
-                MySqlCommand cmd = new MySqlCommand("insert into peminjaman(libraryId, namaPeminjam, id_buku, namaBuku) values(" + tbLibraryId.Text + ",'" + tbNamaPeminjam.Text + "','" + tbIdBuku.Text + "','" + tbJudulBuku.Text + "')",conn);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Succces Input Data");
-                MeminjamBuku refresh = new MeminjamBuku();
-                refresh.Show();
-                this.Hide();
-                conn.Close();
+
+                DateTime dateTime = DateTime.Now;
+                dateTime.ToString("yyyy-MM-dd");
+                
+                try
+                {
+                    cmd = conn.CreateCommand();
+                    cmd.CommandText = "insert into peminjaman(libraryId, namaPeminjam, id_buku, namaBuku, tgl_pinjam) values(@LibId, @namaPeminjam, @idBuku, @namaBuku, @tglPinjam)";
+                    cmd.Parameters.AddWithValue("@LibId", tbLibraryId.Text);
+                    cmd.Parameters.AddWithValue("@namaPeminjam", tbNamaPeminjam.Text);
+                    cmd.Parameters.AddWithValue("@idBuku", tbIdBuku.Text);
+                    cmd.Parameters.AddWithValue("@namaBuku", tbJudulBuku.Text);
+                    cmd.Parameters.AddWithValue("@tglPinjam", dateTime);
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+
+                    MessageBox.Show("Berhasil meminjam buku");
+                    dgvDataPeminjam.Columns.Clear();
+                    dataTable.Clear();
+                    fillDataPeminjaman();
+                    resetKolomPeminjam();
+                } catch
+                {
+
+                }
+                
             }
         }
   
         private void button1_Click(object sender, EventArgs e)
         {
-            if(tbLibraryId.Text == "")
-            {
-                MessageBox.Show("Library ID kosong, silahkan isi dulu");
-            }
-            else
-            {
-                conn.Open();
-                string query = "delete from peminjaman where libraryId = " + tbLibraryId.Text + ";";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Berhasil delete");
-                MeminjamBuku refresh = new MeminjamBuku();
-                refresh.Show();
-                this.Hide();
-                conn.Close();
-            }
+          
         }
 
-
-
         private void dgvDataPeminjam_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        public void resetKolomPeminjam()
+        {
+            tbLibraryId.Text = "";
+            tbNamaPeminjam.Text = "";
+            tbIdBuku.Text = "";
+            tbJudulBuku.Text = "";
+        }
+
+        private void dgvDataPeminjam_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             tbLibraryId.Text = dgvDataPeminjam.SelectedRows[0].Cells[0].Value.ToString();
             tbNamaPeminjam.Text = dgvDataPeminjam.SelectedRows[0].Cells[1].Value.ToString();
             tbIdBuku.Text = dgvDataPeminjam.SelectedRows[0].Cells[2].Value.ToString();
             tbJudulBuku.Text = dgvDataPeminjam.SelectedRows[0].Cells[3].Value.ToString();
+
+            tbLibraryId.Enabled = false;
+            tbNamaPeminjam.Enabled = false;
+            tbIdBuku.Enabled = false;
+            tbJudulBuku.Enabled = false;
+
+            btnReset.Enabled = true;
         }
-        
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            resetKolomPeminjam();
+            tbLibraryId.Enabled = true;
+            tbNamaPeminjam.Enabled = true;
+            tbIdBuku.Enabled = true;
+            tbJudulBuku.Enabled = true;
+            btnReset.Enabled = false;
+        }
+
+        private void btnKembalikan_Click(object sender, EventArgs e)
+        {
+            MySqlCommand cmd;
+            conn.Open();
+
+            try
+            {
+                cmd = conn.CreateCommand();
+                cmd.CommandText = "delete from peminjaman where id_buku = @idBuku AND libraryId = @LibId";
+                cmd.Parameters.AddWithValue("@LibId", tbLibraryId.Text);
+                cmd.Parameters.AddWithValue("@idBuku", tbIdBuku.Text);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+
+                MessageBox.Show("Berhasil mengembalikan buku");
+                dgvDataPeminjam.Columns.Clear();
+                dataTable.Clear();
+                fillDataPeminjaman();
+                resetKolomPeminjam();
+            }
+            catch
+            {
+
+            }
+        }
     }
 }

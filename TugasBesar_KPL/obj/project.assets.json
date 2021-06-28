@@ -839,19 +839,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AKHBAR PUTRA\\.nuget\\packages\\": {}
+    "C:\\Users\\danda\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\kuliah\\SMSTER 4\\Kontruksi\\TUBES\\Tubes_Kpl\\TugasBesar_KPL\\TugasBesar_KPL.csproj",
+      "projectUniqueName": "K:\\KULIAH\\smstr 4\\Konstruksi PL\\tubes\\Tubes_Kpl\\TugasBesar_KPL\\TugasBesar_KPL.csproj",
       "projectName": "TugasBesar_KPL",
-      "projectPath": "C:\\kuliah\\SMSTER 4\\Kontruksi\\TUBES\\Tubes_Kpl\\TugasBesar_KPL\\TugasBesar_KPL.csproj",
-      "packagesPath": "C:\\Users\\AKHBAR PUTRA\\.nuget\\packages\\",
-      "outputPath": "C:\\kuliah\\SMSTER 4\\Kontruksi\\TUBES\\Tubes_Kpl\\TugasBesar_KPL\\obj\\",
+      "projectPath": "K:\\KULIAH\\smstr 4\\Konstruksi PL\\tubes\\Tubes_Kpl\\TugasBesar_KPL\\TugasBesar_KPL.csproj",
+      "packagesPath": "C:\\Users\\danda\\.nuget\\packages\\",
+      "outputPath": "K:\\KULIAH\\smstr 4\\Konstruksi PL\\tubes\\Tubes_Kpl\\TugasBesar_KPL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\AKHBAR PUTRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\danda\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
