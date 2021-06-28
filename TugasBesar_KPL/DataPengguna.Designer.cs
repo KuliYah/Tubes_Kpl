@@ -55,11 +55,12 @@ namespace TugasBesar_KPL
             this.dgvDataPengguna.BackgroundColor = System.Drawing.Color.White;
             this.dgvDataPengguna.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDataPengguna.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dgvDataPengguna.Location = new System.Drawing.Point(47, 269);
+            this.dgvDataPengguna.Location = new System.Drawing.Point(41, 202);
+            this.dgvDataPengguna.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvDataPengguna.Name = "dgvDataPengguna";
             this.dgvDataPengguna.RowHeadersWidth = 51;
             this.dgvDataPengguna.RowTemplate.Height = 29;
-            this.dgvDataPengguna.Size = new System.Drawing.Size(805, 246);
+            this.dgvDataPengguna.Size = new System.Drawing.Size(704, 184);
             this.dgvDataPengguna.TabIndex = 0;
             this.dgvDataPengguna.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDataPengguna_CellClick);
             this.dgvDataPengguna.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDataPengguna_CellContentClick);
@@ -70,9 +71,9 @@ namespace TugasBesar_KPL
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(122, 32);
+            this.label1.Location = new System.Drawing.Point(107, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 21);
+            this.label1.Size = new System.Drawing.Size(76, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Library Id";
             // 
@@ -82,9 +83,9 @@ namespace TugasBesar_KPL
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(122, 78);
+            this.label2.Location = new System.Drawing.Point(107, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 21);
+            this.label2.Size = new System.Drawing.Size(48, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nama";
             // 
@@ -94,9 +95,9 @@ namespace TugasBesar_KPL
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(122, 131);
+            this.label3.Location = new System.Drawing.Point(107, 98);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 21);
+            this.label3.Size = new System.Drawing.Size(44, 17);
             this.label3.TabIndex = 3;
             this.label3.Text = "Email";
             // 
@@ -106,9 +107,9 @@ namespace TugasBesar_KPL
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(122, 182);
+            this.label4.Location = new System.Drawing.Point(107, 136);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 21);
+            this.label4.Size = new System.Drawing.Size(113, 17);
             this.label4.TabIndex = 4;
             this.label4.Text = "No.Handphone";
             // 
@@ -118,52 +119,58 @@ namespace TugasBesar_KPL
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(122, 223);
+            this.label5.Location = new System.Drawing.Point(107, 167);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 21);
+            this.label5.Size = new System.Drawing.Size(75, 17);
             this.label5.TabIndex = 5;
             this.label5.Text = "Password";
             // 
             // tbLibId
             // 
-            this.tbLibId.Location = new System.Drawing.Point(268, 25);
+            this.tbLibId.Location = new System.Drawing.Point(234, 19);
+            this.tbLibId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbLibId.Name = "tbLibId";
-            this.tbLibId.Size = new System.Drawing.Size(160, 27);
+            this.tbLibId.Size = new System.Drawing.Size(140, 23);
             this.tbLibId.TabIndex = 6;
             // 
             // tbNama
             // 
-            this.tbNama.Location = new System.Drawing.Point(268, 71);
+            this.tbNama.Location = new System.Drawing.Point(234, 53);
+            this.tbNama.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbNama.Name = "tbNama";
-            this.tbNama.Size = new System.Drawing.Size(160, 27);
+            this.tbNama.Size = new System.Drawing.Size(140, 23);
             this.tbNama.TabIndex = 7;
             // 
             // tbEmail
             // 
-            this.tbEmail.Location = new System.Drawing.Point(268, 124);
+            this.tbEmail.Location = new System.Drawing.Point(234, 93);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(160, 27);
+            this.tbEmail.Size = new System.Drawing.Size(140, 23);
             this.tbEmail.TabIndex = 8;
             // 
             // tbNohp
             // 
-            this.tbNohp.Location = new System.Drawing.Point(268, 175);
+            this.tbNohp.Location = new System.Drawing.Point(234, 131);
+            this.tbNohp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbNohp.Name = "tbNohp";
-            this.tbNohp.Size = new System.Drawing.Size(160, 27);
+            this.tbNohp.Size = new System.Drawing.Size(140, 23);
             this.tbNohp.TabIndex = 9;
             // 
             // tbPass
             // 
-            this.tbPass.Location = new System.Drawing.Point(268, 216);
+            this.tbPass.Location = new System.Drawing.Point(234, 162);
+            this.tbPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbPass.Name = "tbPass";
-            this.tbPass.Size = new System.Drawing.Size(160, 27);
+            this.tbPass.Size = new System.Drawing.Size(140, 23);
             this.tbPass.TabIndex = 10;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(531, 88);
+            this.btnAdd.Location = new System.Drawing.Point(465, 66);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(94, 29);
+            this.btnAdd.Size = new System.Drawing.Size(82, 22);
             this.btnAdd.TabIndex = 11;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -171,9 +178,10 @@ namespace TugasBesar_KPL
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(666, 179);
+            this.btnDelete.Location = new System.Drawing.Point(583, 134);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(94, 29);
+            this.btnDelete.Size = new System.Drawing.Size(82, 22);
             this.btnDelete.TabIndex = 12;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -181,9 +189,10 @@ namespace TugasBesar_KPL
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(666, 88);
+            this.btnUpdate.Location = new System.Drawing.Point(583, 66);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(94, 29);
+            this.btnUpdate.Size = new System.Drawing.Size(82, 22);
             this.btnUpdate.TabIndex = 13;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -191,9 +200,10 @@ namespace TugasBesar_KPL
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(531, 179);
+            this.btnCancel.Location = new System.Drawing.Point(465, 134);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(94, 29);
+            this.btnCancel.Size = new System.Drawing.Size(82, 22);
             this.btnCancel.TabIndex = 14;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -203,9 +213,10 @@ namespace TugasBesar_KPL
             // 
             this.btnBack.BackColor = System.Drawing.Color.Transparent;
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnBack.Location = new System.Drawing.Point(25, 23);
+            this.btnBack.Location = new System.Drawing.Point(22, 17);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(49, 30);
+            this.btnBack.Size = new System.Drawing.Size(43, 22);
             this.btnBack.TabIndex = 15;
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -215,18 +226,18 @@ namespace TugasBesar_KPL
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(546, 9);
+            this.label6.Location = new System.Drawing.Point(478, 7);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(194, 48);
+            this.label6.Size = new System.Drawing.Size(159, 39);
             this.label6.TabIndex = 16;
             this.label6.Text = "Pengguna";
             // 
             // Data_Pengguna
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(896, 527);
+            this.ClientSize = new System.Drawing.Size(784, 395);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnCancel);
@@ -244,6 +255,7 @@ namespace TugasBesar_KPL
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvDataPengguna);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Data_Pengguna";
             this.Text = "Data_Pengguna";
             this.Load += new System.EventHandler(this.Data_Pengguna_Load);

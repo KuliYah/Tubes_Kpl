@@ -21,7 +21,7 @@ namespace TugasBesar_KPL
             InitializeComponent();
             dgvDataPengguna.DataSource = getDataPengguna();
             setDisabled();
-            
+       
         }
         public DataTable getDataPengguna()
         {
@@ -94,6 +94,7 @@ namespace TugasBesar_KPL
             tbLibId.Enabled = false;
             
             setTextBox(e);
+            
 
         }
 

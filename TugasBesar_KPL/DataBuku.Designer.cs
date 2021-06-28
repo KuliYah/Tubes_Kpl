@@ -40,11 +40,8 @@ namespace TugasBesar_KPL
             this.TBjudulbuku = new System.Windows.Forms.TextBox();
             this.TBpenerbit = new System.Windows.Forms.TextBox();
             this.TBstock = new System.Windows.Forms.TextBox();
-            this.LVdatabuku = new System.Windows.Forms.ListView();
-            this.id_buku = new System.Windows.Forms.ColumnHeader();
-            this.Judul_buku = new System.Windows.Forms.ColumnHeader();
-            this.penerbit = new System.Windows.Forms.ColumnHeader();
-            this.stock = new System.Windows.Forms.ColumnHeader();
+            this.DGVdatabuku = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVdatabuku)).BeginInit();
             this.SuspendLayout();
             // 
             // LBLdatabuku
@@ -100,13 +97,13 @@ namespace TugasBesar_KPL
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(98, 246);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 15);
+            this.label4.Size = new System.Drawing.Size(30, 15);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Stock";
+            this.label4.Text = "Stok";
             // 
             // BTsubmit
             // 
-            this.BTsubmit.Location = new System.Drawing.Point(98, 299);
+            this.BTsubmit.Location = new System.Drawing.Point(256, 291);
             this.BTsubmit.Name = "BTsubmit";
             this.BTsubmit.Size = new System.Drawing.Size(75, 23);
             this.BTsubmit.TabIndex = 6;
@@ -142,48 +139,23 @@ namespace TugasBesar_KPL
             this.TBstock.Size = new System.Drawing.Size(346, 23);
             this.TBstock.TabIndex = 10;
             // 
-            // LVdatabuku
+            // DGVdatabuku
             // 
-            this.LVdatabuku.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.id_buku,
-            this.Judul_buku,
-            this.penerbit,
-            this.stock});
-            this.LVdatabuku.HideSelection = false;
-            this.LVdatabuku.Location = new System.Drawing.Point(161, 341);
-            this.LVdatabuku.Name = "LVdatabuku";
-            this.LVdatabuku.Size = new System.Drawing.Size(487, 97);
-            this.LVdatabuku.TabIndex = 11;
-            this.LVdatabuku.UseCompatibleStateImageBehavior = false;
-            this.LVdatabuku.View = System.Windows.Forms.View.Details;
-            this.LVdatabuku.SelectedIndexChanged += new System.EventHandler(this.LVdatabuku_SelectedIndexChanged);
-            // 
-            // id_buku
-            // 
-            this.id_buku.Text = "id_buku";
-            this.id_buku.Width = 120;
-            // 
-            // Judul_buku
-            // 
-            this.Judul_buku.Text = "judul_buku";
-            this.Judul_buku.Width = 120;
-            // 
-            // penerbit
-            // 
-            this.penerbit.Text = "penerbit";
-            this.penerbit.Width = 120;
-            // 
-            // stock
-            // 
-            this.stock.Text = "stock";
-            this.stock.Width = 120;
+            this.DGVdatabuku.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.DGVdatabuku.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVdatabuku.Location = new System.Drawing.Point(176, 329);
+            this.DGVdatabuku.Name = "DGVdatabuku";
+            this.DGVdatabuku.RowTemplate.Height = 25;
+            this.DGVdatabuku.Size = new System.Drawing.Size(448, 150);
+            this.DGVdatabuku.TabIndex = 11;
             // 
             // DataBuku
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.LVdatabuku);
+            this.BackColor = System.Drawing.SystemColors.Info;
+            this.ClientSize = new System.Drawing.Size(764, 554);
+            this.Controls.Add(this.DGVdatabuku);
             this.Controls.Add(this.TBstock);
             this.Controls.Add(this.TBpenerbit);
             this.Controls.Add(this.TBjudulbuku);
@@ -199,7 +171,7 @@ namespace TugasBesar_KPL
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DGVdatabuku)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,10 +190,6 @@ namespace TugasBesar_KPL
         private System.Windows.Forms.TextBox TBjudulbuku;
         private System.Windows.Forms.TextBox TBpenerbit;
         private System.Windows.Forms.TextBox TBstock;
-        private System.Windows.Forms.ListView LVdatabuku;
-        private System.Windows.Forms.ColumnHeader id_buku;
-        private System.Windows.Forms.ColumnHeader Judul_buku;
-        private System.Windows.Forms.ColumnHeader penerbit;
-        private System.Windows.Forms.ColumnHeader stock;
+        private System.Windows.Forms.DataGridView DGVdatabuku;
     }
 }
