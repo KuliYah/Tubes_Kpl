@@ -844,11 +844,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Aji\\tubeskpl\\TugasBesar_KPL\\TugasBesar_KPL.csproj",
+      "projectUniqueName": "C:\\Users\\ihsan\\Documents\\TubesKPL\\Tubes2\\Tubes_Kpl\\TugasBesar_KPL\\TugasBesar_KPL.csproj",
       "projectName": "TugasBesar_KPL",
-      "projectPath": "D:\\Aji\\tubeskpl\\TugasBesar_KPL\\TugasBesar_KPL.csproj",
+      "projectPath": "C:\\Users\\ihsan\\Documents\\TubesKPL\\Tubes2\\Tubes_Kpl\\TugasBesar_KPL\\TugasBesar_KPL.csproj",
       "packagesPath": "C:\\Users\\ihsan\\.nuget\\packages\\",
-      "outputPath": "D:\\Aji\\tubeskpl\\TugasBesar_KPL\\obj\\",
+      "outputPath": "C:\\Users\\ihsan\\Documents\\TubesKPL\\Tubes2\\Tubes_Kpl\\TugasBesar_KPL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ihsan\\AppData\\Roaming\\NuGet\\NuGet.Config",

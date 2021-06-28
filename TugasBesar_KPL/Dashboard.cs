@@ -12,7 +12,7 @@ namespace TugasBesar_KPL
 {
     public partial class Dashboard : Form
     {
-        Automata.State posisi = Automata.State.DASHBOARD, nextPosisi;
+        Automata.State posisi = Automata.State.DASHBOARD, nextPosisi; 
         public Dashboard()
         {
             InitializeComponent();
@@ -35,27 +35,14 @@ namespace TugasBesar_KPL
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            //Profile menampilkan = new Profile();
-            //menampilkan.Show();
+            
             Automata.setPosisi(posisi, nextPosisi);
             Automata.posisiTransition(nextPosisi);
 
             this.Hide();
         }
 
-        private void btnMeminjamBuku_Click(object sender, EventArgs e)
-        {
-
-            // MeminjamBuku menampilkan2 = new MeminjamBuku();
-            //menampilkan2.Show();
-            nextPosisi = Automata.State.MEMINJAMBUKU;
-            Automata.setPosisi(posisi, nextPosisi);
-            Automata.posisiTransition(nextPosisi);
-
-
-            this.Hide();
-
-        }
+        
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
@@ -74,9 +61,41 @@ namespace TugasBesar_KPL
 
         }
 
-        private void btnDoaIbu_Click(object sender, EventArgs e)
+        private void btnMeminjamBuku_Click(object sender, EventArgs e)
         {
 
+            
+            nextPosisi = Automata.State.MEMINJAMBUKU;
+            Automata.setPosisi(posisi, nextPosisi);
+            Automata.posisiTransition(nextPosisi);
+
+
+            this.Hide();
+
         }
+
+        
+
+        private void btnDataBuku_Click(object sender, EventArgs e)
+        {
+            nextPosisi = Automata.State.DATABUKU;
+            Automata.setPosisi(posisi, nextPosisi);
+            Automata.posisiTransition(nextPosisi);
+            this.Hide();
+
+        }
+
+        private void btnDataPengguna_Click(object sender, EventArgs e)
+        {
+            nextPosisi = Automata.State.DATAPENGGUNA;
+            Automata.setPosisi(posisi, nextPosisi);
+            Automata.posisiTransition(nextPosisi);
+            this.Hide();
+
+        }
+
+
+
+
     }
 }

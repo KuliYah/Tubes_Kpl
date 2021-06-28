@@ -9,7 +9,7 @@ namespace TugasBesar_KPL
 {
     class Automata
     {
-        public enum State { LOGIN, DASHBOARD, MEMINJAMBUKU, LOGOUT }; //Atribut State
+        public enum State { LOGIN, DASHBOARD, MEMINJAMBUKU, DATABUKU, DATAPENGGUNA, LOGOUT }; //Atribut State
         public static State posisi, nextPosisi;
 
         public Automata() { }
@@ -42,7 +42,18 @@ namespace TugasBesar_KPL
                     MeminjamBuku meminjam = new MeminjamBuku();
                     meminjam.Show(); // maka show form MeminjamBuku
                 }
-                
+
+                else if (nextPos == State.DATAPENGGUNA) //Kemudian jika posisi state selanjutnya = DATAPENGGUNA
+                {
+                    Data_Pengguna dataPengguna = new Data_Pengguna();
+                    dataPengguna.Show(); // maka show form Data Pengguna
+                }
+                else if (nextPos == State.DATABUKU) //Kemudian jika posisi state selanjutnya = DATABUKU
+                {
+                    DataBuku dataBuku = new DataBuku();
+                    dataBuku.Show(); // maka show form Data Buku
+                }
+
                 else if (nextPos == State.LOGOUT) //Kemudian jika posisi state selanjutnya = LOGOUT
                 {
                     Login logout = new Login();
@@ -51,7 +62,7 @@ namespace TugasBesar_KPL
                 }
 
 
-                else if (State.MEMINJAMBUKU == posisi || State.LOGOUT == posisi) // Keadaan mengembalikan ke menu Dashboard
+                else if (State.MEMINJAMBUKU == posisi || State.DATAPENGGUNA == posisi || State.DATABUKU == posisi || State.LOGOUT == posisi) // Keadaan mengembalikan ke menu Dashboard
                 {
                     if (nextPos == State.DASHBOARD)
                     {

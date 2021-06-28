@@ -50,9 +50,11 @@ C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-win
 C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\ref\TugasBesar_KPL.dll
 C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\TugasBesar_KPL.pdb
 C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csprojAssemblyReference.cache
+C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.DaftarAkun.resources
 C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Dashboard.resources
 C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Login.resources
 C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.MeminjamBuku.resources
+C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Profile.resources
 C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Properties.Resources.resources
 C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csproj.GenerateResource.cache
 C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.GeneratedMSBuildEditorConfig.editorconfig
@@ -71,11 +73,9 @@ C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.
 C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\ref\TugasBesar_KPL.dll
 C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\TugasBesar_KPL.pdb
 C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csproj.AssemblyReference.cache
-C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.DaftarAkun.resources
 C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Dashboard.resources
 C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Login.resources
 C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.MeminjamBuku.resources
-C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Profile.resources
 C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Properties.Resources.resources
 C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csproj.GenerateResource.cache
 C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.GeneratedMSBuildEditorConfig.editorconfig
@@ -153,46 +153,14 @@ D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_K
 D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.DataBuku.resources
 D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Data_Pengguna.resources
 D:\CATATAN KULIAH\2. SEMESTER 4\Konstruksi PL\Kelas\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csproj.CopyComplete
-C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
-C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\Google.Protobuf.dll
-C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
-C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\K4os.Compression.LZ4.Streams.dll
-C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\K4os.Hash.xxHash.dll
-C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\MySql.Data.dll
-C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
-C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\Zstandard.Net.dll
-C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.DataBuku.resources
-C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Data_Pengguna.resources
-C:\kuliah\SMSTER 4\Kontruksi\TUBES\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csproj.CopyComplete
-D:\Aji\tubeskpl\TugasBesar_KPL\bin\Debug\net5.0-windows\TugasBesar_KPL.exe
-D:\Aji\tubeskpl\TugasBesar_KPL\bin\Debug\net5.0-windows\TugasBesar_KPL.deps.json
-D:\Aji\tubeskpl\TugasBesar_KPL\bin\Debug\net5.0-windows\TugasBesar_KPL.runtimeconfig.json
-D:\Aji\tubeskpl\TugasBesar_KPL\bin\Debug\net5.0-windows\TugasBesar_KPL.runtimeconfig.dev.json
-D:\Aji\tubeskpl\TugasBesar_KPL\bin\Debug\net5.0-windows\TugasBesar_KPL.dll
-D:\Aji\tubeskpl\TugasBesar_KPL\bin\Debug\net5.0-windows\ref\TugasBesar_KPL.dll
-D:\Aji\tubeskpl\TugasBesar_KPL\bin\Debug\net5.0-windows\TugasBesar_KPL.pdb
-D:\Aji\tubeskpl\TugasBesar_KPL\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
-D:\Aji\tubeskpl\TugasBesar_KPL\bin\Debug\net5.0-windows\Google.Protobuf.dll
-D:\Aji\tubeskpl\TugasBesar_KPL\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
-D:\Aji\tubeskpl\TugasBesar_KPL\bin\Debug\net5.0-windows\K4os.Compression.LZ4.Streams.dll
-D:\Aji\tubeskpl\TugasBesar_KPL\bin\Debug\net5.0-windows\K4os.Hash.xxHash.dll
-D:\Aji\tubeskpl\TugasBesar_KPL\bin\Debug\net5.0-windows\MySql.Data.dll
-D:\Aji\tubeskpl\TugasBesar_KPL\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
-D:\Aji\tubeskpl\TugasBesar_KPL\bin\Debug\net5.0-windows\Zstandard.Net.dll
-D:\Aji\tubeskpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csproj.AssemblyReference.cache
-D:\Aji\tubeskpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Dashboard.resources
-D:\Aji\tubeskpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.DataBuku.resources
-D:\Aji\tubeskpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Data_Pengguna.resources
-D:\Aji\tubeskpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Login.resources
-D:\Aji\tubeskpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.MeminjamBuku.resources
-D:\Aji\tubeskpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.Properties.Resources.resources
-D:\Aji\tubeskpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csproj.GenerateResource.cache
-D:\Aji\tubeskpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.GeneratedMSBuildEditorConfig.editorconfig
-D:\Aji\tubeskpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.AssemblyInfoInputs.cache
-D:\Aji\tubeskpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.AssemblyInfo.cs
-D:\Aji\tubeskpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csproj.CoreCompileInputs.cache
-D:\Aji\tubeskpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csproj.CopyComplete
-D:\Aji\tubeskpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.dll
-D:\Aji\tubeskpl\TugasBesar_KPL\obj\Debug\net5.0-windows\ref\TugasBesar_KPL.dll
-D:\Aji\tubeskpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.pdb
-D:\Aji\tubeskpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.genruntimeconfig.cache
+C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
+C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\Google.Protobuf.dll
+C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
+C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\K4os.Hash.xxHash.dll
+C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\MySql.Data.dll
+C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
+C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\bin\Debug\net5.0-windows\Zstandard.Net.dll
+C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.DataBuku.resources
+C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.csproj.CopyComplete
+C:\Users\ihsan\Documents\TubesKPL\Tubes\Tubes_Kpl\TugasBesar_KPL\obj\Debug\net5.0-windows\TugasBesar_KPL.DataPengguna.resources
