@@ -190,5 +190,12 @@ namespace TugasBesar_KPL
 
             }
         }
+
+        private void btnKembali_Click(object sender, EventArgs e)
+        {
+            Dashboard back = new Dashboard();
+            back.Show();
+            this.Hide();
+        }
     }
 }

@@ -41,6 +41,7 @@ namespace TugasBesar_KPL
             this.dgvDataPeminjam = new System.Windows.Forms.DataGridView();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnKembalikan = new System.Windows.Forms.Button();
+            this.btnKembali = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataPeminjam)).BeginInit();
             this.SuspendLayout();
             // 
@@ -161,12 +162,24 @@ namespace TugasBesar_KPL
             this.btnKembalikan.UseVisualStyleBackColor = false;
             this.btnKembalikan.Click += new System.EventHandler(this.btnKembalikan_Click);
             // 
+            // btnKembali
+            // 
+            this.btnKembali.BackColor = System.Drawing.Color.White;
+            this.btnKembali.Location = new System.Drawing.Point(13, 13);
+            this.btnKembali.Name = "btnKembali";
+            this.btnKembali.Size = new System.Drawing.Size(75, 23);
+            this.btnKembali.TabIndex = 14;
+            this.btnKembali.Text = "Kembali";
+            this.btnKembali.UseVisualStyleBackColor = false;
+            this.btnKembali.Click += new System.EventHandler(this.btnKembali_Click);
+            // 
             // MeminjamBuku
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(811, 419);
+            this.Controls.Add(this.btnKembali);
             this.Controls.Add(this.btnKembalikan);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.dgvDataPeminjam);
@@ -203,5 +216,6 @@ namespace TugasBesar_KPL
         private System.Windows.Forms.DataGridView dgvDataPeminjam;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnKembalikan;
+        private System.Windows.Forms.Button btnKembali;
     }
 }
