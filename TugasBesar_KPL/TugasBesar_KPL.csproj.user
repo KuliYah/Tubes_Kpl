@@ -16,5 +16,8 @@
     <Compile Update="MeminjamBuku.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="PengembalianBuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

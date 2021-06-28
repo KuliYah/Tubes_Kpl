@@ -13,6 +13,9 @@ namespace TugasBesar_KPL
 {
     public partial class MeminjamBuku : Form
     {
+        //PENGGUNAAN AUTOMATA PADA TOMBOL BACK
+        Automata.State posisi = Automata.State.MEMINJAMBUKU, nextPosisi;
+
         MySqlConnection conn = new MySqlConnection("server = localhost; uid = root; password=; database = tugasakhir");
         DataTable dataTable = new DataTable();
         public MeminjamBuku()
@@ -114,9 +117,9 @@ namespace TugasBesar_KPL
                     dataTable.Clear();
                     fillDataPeminjaman();
                     resetKolomPeminjam();
-                } catch
+                } catch (Exception ex)
                 {
-
+                    MessageBox.Show(ex.Message);
                 }
                 
             }
@@ -167,34 +170,15 @@ namespace TugasBesar_KPL
 
         private void btnKembalikan_Click(object sender, EventArgs e)
         {
-            MySqlCommand cmd;
-            conn.Open();
 
-            try
-            {
-                cmd = conn.CreateCommand();
-                cmd.CommandText = "delete from peminjaman where id_buku = @idBuku AND libraryId = @LibId";
-                cmd.Parameters.AddWithValue("@LibId", tbLibraryId.Text);
-                cmd.Parameters.AddWithValue("@idBuku", tbIdBuku.Text);
-                cmd.ExecuteNonQuery();
-                conn.Close();
-
-                MessageBox.Show("Berhasil mengembalikan buku");
-                dgvDataPeminjam.Columns.Clear();
-                dataTable.Clear();
-                fillDataPeminjaman();
-                resetKolomPeminjam();
-            }
-            catch
-            {
-
-            }
         }
 
         private void btnKembali_Click(object sender, EventArgs e)
         {
-            Dashboard back = new Dashboard();
-            back.Show();
+            //PENGGUNAAN AUTOMATA
+            nextPosisi = Automata.State.DASHBOARD;
+            Automata.setPosisi(posisi, nextPosisi);
+            Automata.posisiTransition(nextPosisi);
             this.Hide();
         }
     }

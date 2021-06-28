@@ -40,7 +40,6 @@ namespace TugasBesar_KPL
             this.btnSubmit = new System.Windows.Forms.Button();
             this.dgvDataPeminjam = new System.Windows.Forms.DataGridView();
             this.btnReset = new System.Windows.Forms.Button();
-            this.btnKembalikan = new System.Windows.Forms.Button();
             this.btnKembali = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataPeminjam)).BeginInit();
             this.SuspendLayout();
@@ -118,7 +117,7 @@ namespace TugasBesar_KPL
             // 
             this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSubmit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSubmit.Location = new System.Drawing.Point(180, 188);
+            this.btnSubmit.Location = new System.Drawing.Point(244, 188);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(192, 42);
             this.btnSubmit.TabIndex = 8;
@@ -142,25 +141,13 @@ namespace TugasBesar_KPL
             // 
             this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnReset.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnReset.Location = new System.Drawing.Point(671, 188);
+            this.btnReset.Location = new System.Drawing.Point(454, 188);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(71, 42);
             this.btnReset.TabIndex = 12;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            // 
-            // btnKembalikan
-            // 
-            this.btnKembalikan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnKembalikan.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnKembalikan.Location = new System.Drawing.Point(440, 188);
-            this.btnKembalikan.Name = "btnKembalikan";
-            this.btnKembalikan.Size = new System.Drawing.Size(192, 42);
-            this.btnKembalikan.TabIndex = 13;
-            this.btnKembalikan.Text = "Kembalikan";
-            this.btnKembalikan.UseVisualStyleBackColor = false;
-            this.btnKembalikan.Click += new System.EventHandler(this.btnKembalikan_Click);
             // 
             // btnKembali
             // 
@@ -180,7 +167,6 @@ namespace TugasBesar_KPL
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(811, 419);
             this.Controls.Add(this.btnKembali);
-            this.Controls.Add(this.btnKembalikan);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.dgvDataPeminjam);
             this.Controls.Add(this.btnSubmit);
@@ -215,7 +201,6 @@ namespace TugasBesar_KPL
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.DataGridView dgvDataPeminjam;
         private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.Button btnKembalikan;
         private System.Windows.Forms.Button btnKembali;
     }
 }
