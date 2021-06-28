@@ -14,26 +14,27 @@ namespace TugasBesar_KPL
     public partial class DataBuku : Form
     {
         AutomataDashboard.State posisi = AutomataDashboard.State.DATABUKU, nextPosisi;
-
-
+    // connect mysql
         MySqlConnection conn = new MySqlConnection("server = localhost; uid = root; password=; database = tugasakhir");
         DataTable ListBuku = new DataTable();
-        MySqlCommand cmd = new  MySqlCommand();
+        MySqlCommand cmd = new MySqlCommand();
 
         private DataSet ds;
         private MySqlDataAdapter da;
 
 
+
         public DataBuku()
         {
             InitializeComponent();
-            DGVdatabuku.DataSource = getDataBuku();
-           
+            dgvDataBuku.DataSource = getDataBuku();
+            
+            
         }
 
         public DataTable getDataBuku()
         {
-
+            // mengambil data dari database dan menampilkannya di dbgrid
             ListBuku.Reset();
             ListBuku = new DataTable();
             String query = "Select * From buku";
@@ -55,6 +56,7 @@ namespace TugasBesar_KPL
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // penggunaan automata
             nextPosisi = AutomataDashboard.State.DASHBOARD;
             AutomataDashboard.setPosisi(posisi, nextPosisi);
             AutomataDashboard.posisiTransition(nextPosisi);
@@ -65,6 +67,7 @@ namespace TugasBesar_KPL
 
         private void BTsubmit_Click(object sender, EventArgs e)
         {
+            // penggunaan defensive programmming
             try
             {
                 MessageBoxButtons button = MessageBoxButtons.YesNo;
@@ -72,15 +75,15 @@ namespace TugasBesar_KPL
                 if (result == DialogResult.Yes)
                 {
                     conn.Open();
-                    cmd = new MySqlCommand("INSERT INTO buku (id_buku, judul_buku, penerbit, stok) VALUES('" + TBidbuku.Text + "','" + TBjudulbuku.Text + "','" + TBpenerbit.Text + "','" + TBstock.Text + "')", conn);
+                    cmd = new MySqlCommand("INSERT INTO buku (id_buku, judul_buku, penerbit, stok) VALUES('" + tbIdBuku.Text + "','" + tbJudulBuku.Text + "','" + tbPenerbit.Text + "','" + tbStock.Text + "')", conn);
                     cmd.ExecuteNonQuery();
                     conn.Close();
                     MessageBox.Show("Berhasil submit");
-                    DGVdatabuku.DataSource = getDataBuku();
+                    dgvDataBuku.DataSource = getDataBuku();
                 }
                 else
                 {
-                    
+
                 }
             }
             catch (Exception ex)
@@ -92,25 +95,29 @@ namespace TugasBesar_KPL
 
         private void DGVdatabuku_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            BTsubmit.Visible = false;
+            // menampilkan data saat tabel di klik
+            btnSubmit.Visible = false;
 
-            DataGridViewRow row = this.DGVdatabuku.Rows[e.RowIndex];
-            TBidbuku.Text = row.Cells[0].Value.ToString();
-            TBjudulbuku.Text = row.Cells[1].Value.ToString();
-            TBpenerbit.Text = row.Cells[2].Value.ToString();
-            TBstock.Text = row.Cells[3].Value.ToString();
+            DataGridViewRow row = this.dgvDataBuku.Rows[e.RowIndex];
+            tbIdBuku.Text = row.Cells[0].Value.ToString();
+            tbJudulBuku.Text = row.Cells[1].Value.ToString();
+            tbPenerbit.Text = row.Cells[2].Value.ToString();
+            tbStock.Text = row.Cells[3].Value.ToString();
 
         }
 
         private void BTback_Click(object sender, EventArgs e)
         {
-            BTsubmit.Visible = true;
-            TBidbuku.Text = "";
-            TBjudulbuku.Text = "";
-            TBpenerbit.Text = "";
-            TBstock.Text = "";
+            // membuat semua textbox menjadi kosong
+            btnSubmit.Visible = true;
+            tbIdBuku.Text = "";
+            tbJudulBuku.Text = "";
+            tbPenerbit.Text = "";
+            tbStock.Text = "";
 
         }
+
+       
 
         private void BTcari_Click(object sender, EventArgs e)
         {
@@ -118,12 +125,12 @@ namespace TugasBesar_KPL
             try
             {
                 conn.Open();
-                cmd = new MySqlCommand("select *from buku where judul_buku like '%" + TBcari.Text + "%' ", conn);
+                cmd = new MySqlCommand("select *from buku where judul_buku like '%" + tbCari.Text + "%' ", conn);
                 ds = new DataSet();
                 da = new MySqlDataAdapter(cmd);
                 da.Fill(ds, "buku");
-                DGVdatabuku.DataSource = ds;
-                DGVdatabuku.DataMember = "buku";
+                dgvDataBuku.DataSource = ds;
+                dgvDataBuku.DataMember = "buku";
 
             }
             catch (Exception ex)
@@ -138,5 +145,38 @@ namespace TugasBesar_KPL
           
           
         }
+
+
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+
+            DataPengembalian<int> hitung = new DataPengembalian<int>();
+            hitung.Pengembalian = dgvDataBuku.RowCount - 1;
+            lblBanyakData.Text = hitung.Pengembalian.ToString();
+        }
+
+        private void DataBuku_Load(object sender, EventArgs e)
+        {
+
+            DataPengembalian<int> hitung = new DataPengembalian<int>();
+            hitung.Pengembalian = dgvDataBuku.RowCount - 1;
+            lblBanyakData.Text = hitung.Pengembalian.ToString();
+        }
+
+        private void tbStock_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        class DataPengembalian<T>
+        {
+            public T Pengembalian { get; set; }
+        }
     }
+
 }
+
+
+

@@ -18,7 +18,7 @@ namespace TugasBesar_KPL
             InitializeComponent();
         }
 
-        string LibraryId, Password;
+        
 
         private void btnMinimize_Click(object sender, EventArgs e)
         {
@@ -38,11 +38,14 @@ namespace TugasBesar_KPL
             else if(result == DialogResult.No){ }
         }
 
+
+        string LibraryId, Password; // atribut
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
             try
             {
-                Enum LibID = TableDrivenAdmin.LibraryId.admin;
+                Enum LibID = TableDrivenAdmin.LibraryId.admin; // pengambilan 
                 LibraryId = LibID.ToString();
                 Password = TableDrivenAdmin.getAdmin(TableDrivenAdmin.LibraryId.admin);
 
@@ -67,6 +70,13 @@ namespace TugasBesar_KPL
             }
 
 
+
+
+
         }
+
+        
+
+
     }
 }

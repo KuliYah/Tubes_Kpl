@@ -10,13 +10,20 @@ using System.Windows.Forms;
 
 namespace TugasBesar_KPL
 {
+    
     public partial class Dashboard : Form
     {
-        AutomataDashboard.State posisi = AutomataDashboard.State.DASHBOARD, nextPosisi; 
+        AutomataDashboard.State posisi = AutomataDashboard.State.DASHBOARD, nextPosisi; // automata
+       
+
+
+
         public Dashboard()
         {
             InitializeComponent();
         }
+
+
 
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -97,6 +104,17 @@ namespace TugasBesar_KPL
             AutomataDashboard.posisiTransition(nextPosisi);
             this.Hide();
         }
+       
+
+        private void lblNama_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
 
         private void btnDataPengguna_Click(object sender, EventArgs e)
         {
@@ -106,9 +124,5 @@ namespace TugasBesar_KPL
             this.Hide();
 
         }
-
-
-
-
     }
 }

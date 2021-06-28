@@ -20,7 +20,7 @@ namespace TugasBesar_KPL
         DataTable listPengguna = new DataTable();
         MySqlCommand cmd = new MySqlCommand();
         public static Data_Pengguna instance;
-        public Data_Pengguna()
+        private Data_Pengguna()
         {
             InitializeComponent();
             dgvDataPengguna.DataSource = getDataPengguna();

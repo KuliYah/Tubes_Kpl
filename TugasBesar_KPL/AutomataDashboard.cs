@@ -40,13 +40,13 @@ namespace TugasBesar_KPL
             {
                 if (nextPos == State.MEMINJAMBUKU) //Setelahnya jika posisi state selanjutnya = MEMINJAMBUKU
                 {
-                    MeminjamBuku meminjam = new MeminjamBuku();
+                    MeminjamBuku meminjam = MeminjamBuku.GetInstance();
                     meminjam.Show(); // maka show form MeminjamBuku
                 }
 
                 else if (nextPos == State.DATAPENGGUNA) //Kemudian jika posisi state selanjutnya = DATAPENGGUNA
                 {
-                    Data_Pengguna dataPengguna = new Data_Pengguna();
+                    Data_Pengguna dataPengguna = Data_Pengguna.GetInstance();
                     dataPengguna.Show(); // maka show form Data Pengguna
                 }
                 else if (nextPos == State.DATABUKU) //Kemudian jika posisi state selanjutnya = DATABUKU
