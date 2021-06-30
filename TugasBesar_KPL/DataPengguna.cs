@@ -207,7 +207,7 @@ namespace TugasBesar_KPL
 
         private void btnJumlah_Click(object sender, EventArgs e)
         {
-            //PENGGUNAAN GENERIC - I KOMANG DANDA PRIYOWITTESA 1302194017
+            //PENGGUNAAN GENERIC 
             JumlahMember<int> hitung = new JumlahMember<int>();
             hitung.Member = dgvDataPengguna.RowCount - 1;
             row.Text = hitung.Member.ToString();
@@ -215,7 +215,7 @@ namespace TugasBesar_KPL
 
         class JumlahMember<T>
         {
-            //PENGGUNAAN GENERIC - I KOMANG DANDA PRIYOWITTESA 1302194017
+            //PENGGUNAAN GENERIC 
             public T Member { get; set; }
         }
     

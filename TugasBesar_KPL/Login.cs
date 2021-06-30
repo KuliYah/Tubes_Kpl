@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// Ihsan Asfari Hanifan -1302194105
+
+//penggunaan automata, table-driven, dan defensive programming
 namespace TugasBesar_KPL
 {
     public partial class Login : Form
